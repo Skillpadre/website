@@ -6,9 +6,11 @@ import ChangeIconStyled from "../styled/ChangeIconStyled";
 import Img from "../styled/imgStyled";
 import { dark } from "@mui/material/styles/createPalette";
 
+interface Props {
+    children?: React.ReactNode;
+}
 
-
-function Background() {
+function Background({ children }: Props) {
 
     const [darkMode, setDarkMode] = useState(false)
     const [bgSVG, setBgSVG] = useState(boatNight);
@@ -34,12 +36,12 @@ function Background() {
     }
 
     return(
-        <div style={{}}>
-            <BackgroundStyled SVG={bgSVG}>
-                    <Img SVG={bgSVG} />
-                <ChangeIconStyled darkMode={darkMode} onClick={handleClickBtn}/>
-            </BackgroundStyled>
-        </div>
+        <BackgroundStyled SVG={bgSVG}>
+                <ChangeIconStyled darkMode={darkMode} onClick={handleClickBtn} />
+
+                {children} 
+                
+         </BackgroundStyled>
     )
 }
  export default Background;

@@ -9,9 +9,9 @@ export default function Img({SVG}: Props){
 
 
     const IMG = styled.img`
-    
-    height: 100%;
-    width: 100%;
+
+    height: 100vh;
+    width: 1920px;
     `
     return (
         <IMG src={SVG} />  
