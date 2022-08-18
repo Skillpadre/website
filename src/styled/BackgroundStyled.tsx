@@ -1,12 +1,12 @@
 import styled from "@emotion/styled";
 
 interface Props {
-    SVG: string;
+    IMG: string;
     children?: React.ReactNode;
 
 }
 
-export default function BackgroundStyled({SVG, children}: Props){
+export default function BackgroundStyled({IMG, children}: Props){
 
     // get the height of the window
     const height = window.innerHeight;
@@ -17,7 +17,7 @@ export default function BackgroundStyled({SVG, children}: Props){
         height: 100%;
         width: 100%;
         display: flex;
-        background-image: url(${SVG});
+        background-image: url(${IMG});
         background-position: center;
         background-size: 1920px 100%;
         background-repeat: no-repeat;

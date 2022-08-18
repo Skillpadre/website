@@ -10,7 +10,8 @@ function MainContenair({ children }: Props) {
     return(
         <div>
             <div>
-                Salut
+            <button >Change Sea Mode</button>
+
             </div>
             <p> Yo </p>
 
