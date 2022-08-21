@@ -1,0 +1,60 @@
+
+.bubbles { height: 100% }
+.bubbles { padding: 100px 0 }
+.bubble {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    position: relative;
+}
+
+.x1 {
+    transform: scale(0.9);
+    opacity: 0.2;
+    animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+
+.x2 {
+    left: 20%;
+    transform: scale(0.6);
+    opacity: 0.5;
+    animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+}
+.x3 {
+    left: 40%;
+    transform: scale(0.8);
+    opacity: 0.3;
+    animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+.x4 {
+    left: 60%;
+    transform: scale(0.75);
+    opacity: 0.35;
+    animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+.x5 {
+    left: 80%;
+    transform: scale(0.8);
+    opacity: 0.3; 
+    animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+}
+@keyframes moveclouds { 
+    0% { 
+        top: 500px;
+    }
+    100% { 
+        top: -1000px;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}

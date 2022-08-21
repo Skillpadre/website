@@ -1,0 +1,102 @@
+.s3 {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#233abc+0,131f66+100 */
+    background: linear-gradient(to bottom,  #233abc 0%,#131f66 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-color: aquamarine;
+    background-position: center;
+    background-size: 1920px 100%;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+
+.s4 {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-image: 
+    url(../assets/backgrounds/boat.svg), 
+    linear-gradient(to bottom, #131f66 0%, #0c0c3f 100%);
+    
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom right, left, right;
+    
+    /* background-size: cover; */
+}
+
+.s5 {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    
+    background: linear-gradient(to bottom, #0c0c3f 0%, #010111 100%);
+    
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom right, left, right;
+    
+    /* background-size: cover; */
+}
+
+
+.s6 {
+    width: 100%;
+    min-height: 100vh;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-image: 
+    url(../assets/backgrounds/boat.svg), 
+    linear-gradient(to bottom, #010111 0%, #000000 100%);
+    
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom right, left, right;
+    
+    /* background-size: cover; */
+}
+
+.s7 {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: 
+    
+    url(../assets/svg/First_Wave.svg), 
+    url(../assets/svg/Second_Wave.svg), 
+    url(../assets/svg/boat.svg),
+    url(../assets/svg/Third_Wave.svg), 
+    url(../assets/svg/Forth_Wave.svg), 
+
+ 
+    url(../assets/svg/Sun.svg), 
+    url(../assets/svg/Day.svg);
+    /* linear-gradient(to bottom,  #131f66 0%,#0c0c3f 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    background-position: left bottom, left bottom, center, left bottom, left bottom, center, left;
+    /* background-size: 1920px 100%; */
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    /* background-size: cover; */
+}
