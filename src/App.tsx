@@ -15,7 +15,7 @@ import Projects from './components/sections/Projects';
 import Section3 from './components/sections/Section3';
 import Section4 from './components/sections/Section4';
 import Section5 from './components/sections/Section5';
-import Section6 from './components/sections/Section6';
+import SecretSection from './components/sections/SecretSection';
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
           <Section3 />
           <Section4 />
           <Section5 />
-          <Section6 />
+          <SecretSection />
         </main>
         <Footer />
       </div>
