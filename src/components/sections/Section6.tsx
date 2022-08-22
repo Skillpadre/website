@@ -4,6 +4,9 @@ import script from "../../scripts/smoke.js";
 
 import styles from '../../styles/Sections.module.css'
 
+import Footer from '../Footer';
+
+
 
 interface Props {
     children?: React.ReactNode;
@@ -11,19 +14,25 @@ interface Props {
 
 export default function Section6({ children }: Props) {
 
+    const [color, setColor] = useState("black");
+    const [enter, setEnter] = useState(false);
+
     useEffect(() => {
-        script();
-    }, []);
+        if(enter)
+            script();
+    }, [enter]);
     
 
 
     return(
-        <section className={styles.s6}>
-            <canvas id="canvas" style={{cursor: 'none', width: "100%", height: "50vh", background: "linear-gradient(to bottom, #010111 0%, #000000 100%)"}}></canvas>
+        <section onMouseEnter={() => setEnter(true)} onMouseLeave={() => setColor("black")} className={styles.s6}>
+
+            <p style={{color: color}}>Script by <a target="blank" href="https://codepen.io/PavelDoGreat/pens/public">@PavelDoGreat</a> on <a target="blank" href="https://codepen.io/">CodePen</a></p>
+            <canvas onMouseEnter={() =>  setColor("grey")} id="canvas" style={{cursor: 'none', width: "100%", height: "50vh", background: "linear-gradient(to bottom, #010111 0%, #000000 100%)"}}></canvas>
 
             {children} 
             
-  
+            {/* <Footer /> */}
          </section>
     )
 }

@@ -8,6 +8,7 @@ import Background from './components/Background';
 import MainContenair from './components/MainContenair';
 
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 import Home from './components/sections/Home';
 import Projects from './components/sections/Projects';
@@ -23,16 +24,18 @@ function App() {
       {/* <Background>
         <MainContenair />
       </Background> */}
-
-      <NavBar />
-      <main>
-        <Home />
-        <Projects />
-        <Section3 />
-        <Section4 />
-        <Section5 />
-        <Section6 />
-      </main>
+      <div style={{maxHeight: "600%"}}>
+        <NavBar />
+        <main>
+          <Home />
+          <Projects />
+          <Section3 />
+          <Section4 />
+          <Section5 />
+          <Section6 />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

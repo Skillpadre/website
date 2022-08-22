@@ -642,6 +642,7 @@ canvas.addEventListener('touchmove', (e) => {
 }, false);
 
 canvas.addEventListener('mouseover', () => {
+
     pointers[0].down = true;
     pointers[0].color = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2];
 });
@@ -678,3 +679,4 @@ window.addEventListener('touchend', (e) => {
                 pointers[j].down = false;
 });
 }
+

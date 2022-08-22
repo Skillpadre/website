@@ -1,0 +1,27 @@
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background-color: #1D1C1E;
+    color: "white";
+
+    width: 50%;
+    min-height: 100px;
+    border-radius: 15px 15px 0 0;
+
+
+    
+    z-index: 9;
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p {
+    margin: 0px;
+}

@@ -26,12 +26,9 @@
     flex-direction: column;
     justify-content: center;
     
-    background-image: 
-    url(../assets/backgrounds/boat.svg), 
-    linear-gradient(to bottom, #131f66 0%, #0c0c3f 100%);
+    background: linear-gradient(to bottom, #131f66 0%, #0c0c3f 100%);
     
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: bottom right, left, right;
+
     
     /* background-size: cover; */
 }
@@ -46,10 +43,7 @@
     justify-content: center;
     
     background: linear-gradient(to bottom, #0c0c3f 0%, #010111 100%);
-    
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: bottom right, left, right;
-    
+
     /* background-size: cover; */
 }
 
@@ -62,15 +56,26 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    margin-bottom: -100px;
     
-    background-image: 
-    url(../assets/backgrounds/boat.svg), 
-    linear-gradient(to bottom, #010111 0%, #000000 100%);
-    
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: bottom right, left, right;
+    background: linear-gradient(to bottom, #010111 0%, #000000 100%);
     
     /* background-size: cover; */
+}
+
+.s6 p {
+    font-size: 13px;
+    font-style: italic;
+
+}
+.s6 a {
+    /* color: blue; */
+    cursor: pointer;
+    text-decoration: underline;
+} :hover {
+    color: lightblue;
 }
 
 .s7 {
