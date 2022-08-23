@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
+import HublotImg from "../../styled/HublotImg";
 
 import styles from "./styles/AboutMe.module.css";
-
+import bgScreen from "../../assets/screens/eny-screen.png";
 import Bubbles from "../Bubbles";
 
 
@@ -24,6 +26,10 @@ export default function AboutMeSection({ children }: Props) {
             </div>
 
             <div className={styles.img} >
+            <Link to="/aboutme  ">
+
+                <HublotImg bg={bgScreen} />
+            </Link>
 
             </div>
 

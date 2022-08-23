@@ -10,6 +10,8 @@
     background: -webkit-linear-gradient(top,  #619fe4 0%,#233abc 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #619fe4 0%,#233abc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#619fe4', endColorstr='#233abc',GradientType=0 ); /* IE6-9 */
+    background-size: 1920px 100%;
+
 }
 
 .text {
@@ -22,7 +24,5 @@
     margin: 50px;
     max-width: 50%;
 
-    background-color: black;
-    width: 100px;
-    height: 100px;
+
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import BackgroundBoat from '../components/BackgroundBoat';
 import BackgroundSea from '../components/BackgroundSea';
 import Background from '../components/Background';
@@ -25,7 +24,7 @@ function Homepage() {
         <MainContenair />
       </Background> */}
       <div>
-        <NavBar />
+        {/* <NavBar /> */}
         <main>
           <HomeSection />
           <AboutMeSection />

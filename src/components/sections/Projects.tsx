@@ -1,4 +1,9 @@
 import React, {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
+import ProjectsBgStyled from "../../styled/ProjectsBgStyled";
+import HublotImg from "../../styled/HublotImg";
+
+import bgScreen from "../../assets/screens/masques-screen.png";
 
 import styles from './styles/Projects.module.css'
 
@@ -11,19 +16,22 @@ export default function Projects({ children }: Props) {
 
 
     return(
-        <section className={styles.projectsContainer}>
+        <ProjectsBgStyled flexDir="row" justify="space-between" align="start">
             <div className={styles.img} >
+                <Link to="/projects">
 
+                    <HublotImg bg={bgScreen} />
+                </Link>
             </div>
             <div className={styles.text}>
                 <h1>Projects</h1>
                 <p>
-                    I'm a 21 years old developer from Poland. I'm currently studying Computer Science at the University of Warsaw. I'm interested in web development, especially in frontend. I'm also interested in game development and I'm currently learning Unity. I'm also interested in machine learning and I'm currently learning Python.
+                    Voici mes différents projets. Vous pouvez cliquer sur l'image pour en savoir plus.
                 </p>
             </div>
 
 
             {children}   
-         </section>
+         </ProjectsBgStyled>
     )
 }
