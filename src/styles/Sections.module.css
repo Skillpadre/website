@@ -65,16 +65,12 @@
     /* background-size: cover; */
 }
 
-section p {
-    font-size: 13px;
-    font-style: italic;
 
-}
 .s6 a {
     /* color: blue; */
     cursor: pointer;
     text-decoration: underline;
-} :hover {
+} a:hover {
     color: lightblue;
 }
 

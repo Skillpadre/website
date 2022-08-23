@@ -5,7 +5,7 @@ import script from "../../scripts/smoke.js";
 import SecretStyled from "../../styled/SecretStyled";
 
 //import styles from "../../styles/Sections.module.css";
-
+import CanvasStyled from "../../styled/CanvasStyled";
 import CanvasSmoke from "../CanvasSmoke";
 import TextScript from "../../styled//TextScript";
 
@@ -28,24 +28,22 @@ export default function Section6({ children }: Props) {
 
     const handleEnter = () => {
         setEnter(true);
-        setColor("grey");
-
     }
     
     const handleLeave = () => {
-        //setColor("black");
+        setColor("black");
     }
 
     const handleMouseEnter = () => {
-        //setColor("grey");
+        setColor("grey");
     }
 
     return(
-        <SecretStyled onMouseEnter={handleEnter} onClick={()=> setColor("black")} onMouseLeave={handleLeave}>
+        <SecretStyled onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
 
             <TextScript color={color} />
             {/* <canvas onMouseEnter={() => setColor("grey")} id="canvas" style={{cursor: 'none', width: "100%", height: "50vh", background: "linear-gradient(to bottom, #010111 0%, #000000 100%)"}}></canvas> */}
-            <CanvasSmoke  />
+            <CanvasStyled mouseEnter={handleMouseEnter} />
             
             
             {children} 

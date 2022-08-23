@@ -4,11 +4,10 @@ interface Props {
     children?: React.ReactNode;
     onMouseEnter: () => void;
     onMouseLeave: () => void;
-    onClick: () => void;
 
 }
 
-export default function SecretStyled({ children, onMouseEnter, onMouseLeave, onClick }: Props){
+export default function SecretStyled({ children, onMouseEnter, onMouseLeave }: Props){
 
     function handleEnter() {
         onMouseEnter()
@@ -34,7 +33,7 @@ export default function SecretStyled({ children, onMouseEnter, onMouseLeave, onC
    
     `
     return (
-        <Section onMouseEnter={handleEnter} onClick={onClick} onMouseLeave={handleLeave}>
+        <Section onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
             {children}
         </Section>   
     )
