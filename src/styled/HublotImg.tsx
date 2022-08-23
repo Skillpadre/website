@@ -17,8 +17,7 @@ export default function HublotImg({bg}: Props) {
     background-repeat: no-repeat;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+
     object-fit: cover;
     cursor: pointer;
     `
