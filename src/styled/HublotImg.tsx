@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import hublot from '../assets/hublot.png';
+import hublot from '../assets/hublot4.png';
 
 import screen from '../assets/screens/masques-screen.png';
 
@@ -13,13 +13,16 @@ export default function HublotImg({bg}: Props) {
 
     const Img = styled.img`
     background-image: url(${bg});
-    background-size: 130%;
+    //background-color: #000;
+    background-size: 95%;
+    background-clip: border-box;
     background-repeat: no-repeat;
     background-position: center;
-    background-repeat: no-repeat;
-
-    object-fit: cover;
+    object-fit: contain;
     cursor: pointer;
+
+    padding: -2em;
+    border-radius: 50%;
     `
 
   return (
