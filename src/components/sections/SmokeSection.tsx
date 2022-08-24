@@ -27,8 +27,8 @@ export default function Section6({ children }: Props) {
     return(
         <section onMouseEnter={() => setEnter(true)} onMouseLeave={() => setColor("black")} className={styles.s6}>
 
+            <canvas onMouseEnter={() =>  setColor("grey")} id="canvas" style={{margin: "10px", cursor: 'none', width: "100%", height: "50vh", background: "linear-gradient(to bottom, #010111 0%, #000000 100%)"}}></canvas>
             <p style={{color: color}}>Script by <a target="blank" href="https://codepen.io/PavelDoGreat/pens/public">@PavelDoGreat</a> on <a target="blank" href="https://codepen.io/">CodePen</a></p>
-            <canvas onMouseEnter={() =>  setColor("grey")} id="canvas" style={{cursor: 'none', width: "100%", height: "50vh", background: "linear-gradient(to bottom, #010111 0%, #000000 100%)"}}></canvas>
 
             {children} 
             

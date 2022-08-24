@@ -13,8 +13,6 @@ export default function ChangeIconStyled({darkMode} : Props){
 
     const ChangeIcon = styled(IconButton)`
     color: #ff8f00;
-    position: fixed;
-    top: 0px; left: 0px;
 
     `
     return (
