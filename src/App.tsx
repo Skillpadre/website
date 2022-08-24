@@ -4,6 +4,9 @@ import './App.css';
 import Homepage from './screens/Home';
 import Projects from './screens/Projects';
 import AboutMe from './screens/AboutMe';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import IconButtonReturn from './styled/IconButtonReturnStyled';
 
 
 import {
@@ -14,11 +17,17 @@ import {
 function App() {
   return (
     <>
+      <NavBar>
+        <IconButtonReturn />
+      </NavBar>
     <Routes>
       <Route path="/" element={<Homepage />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/aboutme" element={<AboutMe />} />
     </Routes>
+    
+    <Footer />
+
 
     </>
   );

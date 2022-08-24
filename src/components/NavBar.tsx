@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from "react";
+import styled from '@emotion/styled';
+
 
 import ChangeIconStyled2 from "../styled/ChangeIconStyled2";
 
@@ -12,12 +14,21 @@ interface Props {
 
 export default function NavBar({ children }: Props) {
 
+    const Nav = styled.div`
+    position: fixed;
+    top: 0px; left: 0px;
+
+    display: flex;
+    flex-direction: column;
+
+    `
+
 
     return(
-        <div>
+        <Nav>
             <ChangeIconStyled2 darkMode={true}  />
 
             {children}   
-         </div>
+         </Nav>
     )
 }

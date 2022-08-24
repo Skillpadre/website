@@ -34,7 +34,7 @@ function Homepage() {
           <SmokeSection />
           {/* <SecretSection /> */}
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
