@@ -6,8 +6,6 @@ import Bubble from "../../styled/Bubble";
 
 import bgScreen from "../../assets/screens/eny-screen.png";
 
-import styles from "./styles/AboutMe.module.css";
-
 import type { RootState } from '../../app/store'
 import { useSelector } from 'react-redux'
 
@@ -46,10 +44,9 @@ export default function AboutMeSection({ children }: Props) {
             </div>
 
             <div style={{ margin: '50px', maxWidth: '50%' }} >
-                {/* <Link to="/aboutme  "> */}
-                <Bubble screen={bgScreen} />
-                    {/* <HublotImg bg={bgScreen} /> */}
-                {/* </Link> */}
+                <Link to="/aboutme  ">
+                <Bubble translate="left" screen={bgScreen} />
+                </Link>
 
             </div>
 
