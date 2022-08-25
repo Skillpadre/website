@@ -31,6 +31,8 @@ export default function AboutMeSection({ children }: Props) {
     background-size: 1920px 100%;
 
     color: aquamarine;
+    z-index: 0;
+
     `
 
     return (

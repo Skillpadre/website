@@ -19,7 +19,8 @@ const screenPath = '../assets/screens/';
 const lorem1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat "
 
 const lorem2 = "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-type projet = {
+
+export type projet = {
     name: string;
     description: string;
     img: string;
@@ -33,6 +34,62 @@ const projects: projet[] = [
         img: "masques-screen.png",
         github: "",
         link: "https://masques.netlify.app/"
+    },
+    {
+        name: "Live Plantos",
+        description: "Live Plantos est une Web App développée en React JS qui affiche tous les streams en cours sur le serveur GTA RP de Los Plantos.",
+        img: "lp-screen.png",
+        github: "",
+        link: "https://masques.netlify.app/"
+    },
+    {
+        name: "ENY Token",
+        description: "ENY Token",
+        img: "eny-screen.png",
+        github: "",
+        link: "https://masques.netlify.app/"
+    },
+    {
+        name: "SpendCoin dApp",
+        description: "Spend Coin dApp",
+        img: "spc-screen.png",
+        github: "",
+        link: "https://masques.netlify.app/"
+    },
+    {
+        name: "Morning News",
+        description: "Morning News est une application web développée en React JS qui permet d’afficher les news actualisées et de les mettre dans une wishlist pour les sauvegarder en base de données et les lire plus tard.",
+        img: "masques-screen.png",
+        github: "",
+        link: "https://masques.netlify.app/"
+    },
+    {
+        name: "My Moviz",
+        description: "MyMoviz est une Web App développée en React JS connectée directement à une API permettant de récupérer les informations des films. Elle propose une liste de films, avec les dernières sorties cinéma à jour, et vous permet de créer votre propre wishlist.",
+        img: "masques-screen.png",
+        github: "",
+        link: "https://masques.netlify.app/"
+    },
+    {
+        name: "Web3 Labo",
+        description: "",
+        img: "masques-screen.png",
+        github: "",
+        link: "https://masques.netlify.app/"
+    },
+    {
+        name: "La Cabane",
+        description: "La Cabane est un site vitrine d'une petite cabane à louer dans la campagne provençale. Développer avec WordPress.",
+        img: "INF.png",
+        github: "",
+        link: "https://la-cabane13.fr/"
+    },
+    {
+        name: "Tiketac",
+        description: "Tiketac est un site de réservation de train développée en React avec base de donnée.",
+        img: "INF.png",
+        github: "",
+        link: "https://pure-escarpment-44226.herokuapp.com/"
     },
 ]
 function Projects() {
@@ -62,77 +119,11 @@ function Projects() {
                         spacing={5}
                 >
 
-                    <BoxItem>
-                        {lorem1}
-                    </BoxItem>
-
-                    <BoxItem>
-                        {lorem2}
-                    </BoxItem>
-
-                    <BoxItem>
-                        {lorem1}
-                    </BoxItem>
-
-                    <BoxItem>
-                        {lorem2}
-                    </BoxItem>
-
-                    <BoxItem>
-                        {lorem1}
-                    </BoxItem>
-
-                            
-                {/* <div className="un-projet" style={{display: 'flex'}}>
-                    <ImgsProjectsStyled src={require("../assets/screens/masques-screen.png")} alt="masques" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div className="un-projet" style={{display: 'flex'}}>
-                    <ImgsProjectsStyled src={require("../assets/screens/masques-screen.png")} alt="masques" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div className="un-projet" style={{display: 'flex'}}>
-                    <ImgsProjectsStyled src={require("../assets/screens/masques-screen.png")} alt="masques" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div className="un-projet" style={{display: 'flex'}}>
-                    <ImgsProjectsStyled src={require("../assets/screens/masques-screen.png")} alt="masques" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div> */}
+                    {projects.map((project, index) => (
+                        (<BoxItem projet={project} key={index}/>)
+                    ))}
                 </Stack>
                 </Box>
-
-            {/* <div className="list-projects">
-
-                <div className="un-projet" style={{display: 'flex'}}>
-                    <ImgsProjectsStyled src={require("../assets/screens/masques-screen.png")} alt="masques" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div className="un-projet" style={{display: 'flex'}}>
-                    <ImgsProjectsStyled src={require("../assets/screens/masques-screen.png")} alt="masques" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div className="un-projet" style={{display: 'flex'}}>
-                    <ImgsProjectsStyled src={require("../assets/screens/masques-screen.png")} alt="masques" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div className="un-projet" style={{display: 'flex'}}>
-                    <ImgsProjectsStyled src={require("../assets/screens/masques-screen.png")} alt="masques" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div className="un-projet" style={{display: 'flex'}}>
-                    <ImgsProjectsStyled src={require("../assets/screens/masques-screen.png")} alt="masques" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-            </div> */}
 
         </ProjectsBgStyled>
     </>

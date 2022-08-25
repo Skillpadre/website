@@ -30,6 +30,8 @@ export default function ProjectsBgStyled({ children, flexDir, justify, align }: 
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
     color: aquamarine;
+    z-index: 0;
+
     `
 
     return (

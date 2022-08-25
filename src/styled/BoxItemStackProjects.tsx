@@ -3,7 +3,22 @@ import Box from '@mui/material/Box';
 import ImgsProjectsStyled from './ImgsProjectsStyled';
 import TypoDescriptionProjectStyled from './TypoDescriptionProject';
 
-export default function BoxItemStackProjects({ children }: any) {
+//import type projet from '../screens/Projects';
+
+type projet = {
+    name: string;
+    description: string;
+    img: string;
+    github: string;
+    link: string;
+}
+
+interface Props {
+    children?: React.ReactNode;
+    projet: projet;
+}
+
+export default function BoxItemStackProjects({ children, projet }: Props) {
     
         const BoxItem = styled(Box)({
             display: 'flex',
@@ -26,9 +41,9 @@ export default function BoxItemStackProjects({ children }: any) {
     return (
         <>
             <BoxItem>
-                    <ImgsProjectsStyled src={require("../assets/screens/eny-screen.png")} alt="masques" />
+                    <ImgsProjectsStyled src={require(`../assets/screens/${projet.img}`)} alt="masques" />
                     <TypoDescriptionProjectStyled>
-                        {children}
+                        {projet.description}
                     </TypoDescriptionProjectStyled>
             </BoxItem>
         </>

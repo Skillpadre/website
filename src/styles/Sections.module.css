@@ -26,6 +26,7 @@
     justify-content: center;
     
     background: linear-gradient(to bottom, #131f66 0%, #0c0c3f 100%);
+    z-index: -1;
 }
 
 .s4Dark {
@@ -37,6 +38,8 @@
     justify-content: center;
     
     background: linear-gradient(to bottom, #090419 0%, #030109 100%);
+    z-index: -1;
+
 }
 
 .s5Dark {
