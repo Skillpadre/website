@@ -4,9 +4,10 @@ import styled from "@emotion/styled";
 
 interface Props {
     screen?: string;
+    translate?: string;
 }
 
-export default function Bubble({ screen }: Props) {
+export default function Bubble({ screen, translate }: Props) {
 
     const Bubble = styled.div`
     
@@ -15,7 +16,7 @@ export default function Bubble({ screen }: Props) {
     border-radius: 50%;
 
     cursor: pointer;
-	position: relative;
+	// position: relative;
 
     background-image:
 		// radial-gradient(8% 8% at 22% 28%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
@@ -27,7 +28,7 @@ export default function Bubble({ screen }: Props) {
 		// radial-gradient(8% 8% at 28% 22%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%);
         url(${screen});
 
-    background-size: 150%;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;
     
@@ -54,7 +55,10 @@ export default function Bubble({ screen }: Props) {
 
 
         &:hover {
-            transform: scale(1.5);
+            transform: translate(10%, 0);
+            transform: scale(1.5) 
+            ${translate === "left" ? 'translate(-20%, 0)': null} 
+            ${translate === "right" ? 'translate(20%, 0)': null};
             outline: none;
         }
 
@@ -84,7 +88,9 @@ export default function Bubble({ screen }: Props) {
     
     return (
         <>
-        <Bubble />
+        <div style={{animation: 'float 8s ease-in-out infinite'}}>
+            <Bubble />
+        </div>
         </>
     )
 }
