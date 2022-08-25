@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from '@emotion/styled';
 import { Link } from "react-router-dom";
 import HublotImg from "../../styled/HublotImg";
+import Bubble from "../../styled/Bubble";
 
 import bgScreen from "../../assets/screens/eny-screen.png";
 
@@ -46,13 +47,7 @@ export default function AboutMeSection({ children }: Props) {
 
             <div style={{ margin: '50px', maxWidth: '50%' }} >
                 {/* <Link to="/aboutme  "> */}
-
-
-                    {/* <label> */}
-                        <div className={styles.bubble}>
-
-                        </div>
-                    {/* </label> */}
+                <Bubble screen={bgScreen} />
                     {/* <HublotImg bg={bgScreen} /> */}
                 {/* </Link> */}
 
