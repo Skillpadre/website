@@ -8,6 +8,7 @@ import SecretStyled from "../../styled/SecretStyled";
 import CanvasStyled from "../../styled/CanvasStyled";
 import CanvasSmoke from "../CanvasSmoke";
 import TextScript from "../../styled//TextScript";
+import { WindowSharp } from "@mui/icons-material";
 
 
 interface Props {
@@ -22,6 +23,9 @@ export default function Section6({ children }: Props) {
     useEffect(() => {
         if(enter)
             script();
+            return () => {
+                window.stop();
+            }
     }, [enter]);
     
     

@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from "react";
 import styled from '@emotion/styled';
 
+import type { RootState } from '../app/store'
+import { useSelector } from 'react-redux'
+
 
 import ChangeIconStyled2 from "../styled/ChangeIconStyled2";
-
-
-<ChangeIconStyled2 darkMode={true}  />
+import ButtonReturnStyled from "../styled/ButtonReturnStyled";
 
 
 interface Props {
@@ -14,20 +15,21 @@ interface Props {
 
 export default function NavBar({ children }: Props) {
 
+    const displayBackButton = useSelector((state: RootState) => state.backButton.value)
+
     const Nav = styled.div`
     position: fixed;
     top: 0px; left: 0px;
 
     display: flex;
     flex-direction: column;
-
     `
 
 
     return(
         <Nav>
-            <ChangeIconStyled2 darkMode={true}  />
-
+            <ChangeIconStyled2 />
+            {displayBackButton ? <ButtonReturnStyled /> : null}
             {children}   
          </Nav>
     )

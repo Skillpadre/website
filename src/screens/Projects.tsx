@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import ProjectsBgStyled from '../styled/ProjectsBgStyled';
 import ImgsProjectsStyled from '../styled/ImgsProjectsStyled';
 import TypoTitle from '../styled/TypoTitleStyled';
@@ -9,7 +9,9 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 
-import NavBar from '../components/NavBar';
+import { useSelector, useDispatch } from 'react-redux'
+import { enableBackButton, disableBackButton } from '../app/reducers/BackButtonReducer'
+
 const bgScreen = require('../assets/screens/masques-screen.png');
 
 const screenPath = '../assets/screens/';
@@ -34,6 +36,18 @@ const projects: projet[] = [
     },
 ]
 function Projects() {
+
+    const dispatch = useDispatch()
+
+
+    useEffect(() => {
+        dispatch(enableBackButton())
+        return () => {
+            dispatch(disableBackButton())
+        }
+    } , [])
+
+    
   return (
     <>
             {/* <NavBar /> */}

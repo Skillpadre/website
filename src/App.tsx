@@ -6,8 +6,8 @@ import Projects from './screens/Projects';
 import AboutMe from './screens/AboutMe';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import IconButtonReturn from './styled/IconButtonReturnStyled';
-
+import IconButtonReturn from './styled/ButtonReturnStyled';
+import { useNavigate } from 'react-router-dom';
 
 import {
   Routes,
@@ -15,18 +15,22 @@ import {
 } from "react-router-dom";
 
 function App() {
+
+
+  const nav = useNavigate();
+
   return (
     <>
       <NavBar>
-        <IconButtonReturn />
+        {/* <IconButtonReturn /> */}
       </NavBar>
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/aboutme" element={<AboutMe />} />
-    </Routes>
-    
-    <Footer />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+      </Routes>
+
+      <Footer />
 
 
     </>

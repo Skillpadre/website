@@ -23,9 +23,9 @@ interface Props {
         }
     }, []);
 
-    useEffect(() => {
-            script();
-    }, []);
+    // useEffect(() => {
+    //         script();
+    // }, []);
 
     const Canvas = styled.canvas`
     cursor: none;

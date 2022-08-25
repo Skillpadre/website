@@ -16,6 +16,7 @@ import Section5 from '../components/sections/Section5';
 import SmokeSection from '../components/sections/SmokeSection';
 import SecretSection from '../components/sections/SecretSection';
 
+
 function Homepage() {
   return (
     <>
