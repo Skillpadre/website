@@ -15,7 +15,7 @@ interface Props {
 export default function Projects({ children }: Props) {
 
     return(
-        <ProjectsBgStyled flexDir="row" justify="space-between" align="start">
+        <ProjectsBgStyled flexDir="row" justify="space-around" align="start">
             
             <div style={{margin: '50px', maxWidth: '50%'}}>
                 <Link style={{animation: 'float 4s ease-in-out infinite'}} to="/projects">

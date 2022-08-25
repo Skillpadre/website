@@ -32,6 +32,11 @@ export default function ProjectsBgStyled({ children, flexDir, justify, align }: 
     color: aquamarine;
     z-index: 0;
 
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     `
 
     return (

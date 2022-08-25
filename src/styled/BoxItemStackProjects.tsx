@@ -23,8 +23,8 @@ export default function BoxItemStackProjects({ children, projet }: Props) {
         const BoxItem = styled(Box)({
             display: 'flex',
             flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'center',
+            //justifyContent: 'space-between',
+            //alignItems: 'center',
 
             width: '100%',
 

@@ -44,7 +44,7 @@ const projects: projet[] = [
     },
     {
         name: "ENY Token",
-        description: "ENY Token",
+        description: "ENY Token est un site qui ne se met pas au milieu pourquoi ca fait ca bordel, les autres se mettent bien au middle et lui non, ca rend fou putain de merde, et voila ca se met au middle quand c'est trop long",
         img: "eny-screen.png",
         github: "",
         link: "https://masques.netlify.app/"

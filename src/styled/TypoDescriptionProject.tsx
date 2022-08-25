@@ -5,15 +5,15 @@ import styled from '@emotion/styled';
 
 const TypoStyled = styled(Typography)({
     display: 'flex',
+    justifyContent: 'center',
     alignItems: 'center',
 
     //fontSize: '3.2rem',
-
+    width: '100%',
 
     margin: '0 50px 0 50px',
     color: 'aquamarine',
     textAlign: 'center',
-    verticalAlign: 'bottom',
     fontFamily: 'Roboto, sans-serif',
     '@media (max-width: 600px)': {
         //fontSize: '1.5rem',
