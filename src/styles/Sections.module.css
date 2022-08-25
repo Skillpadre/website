@@ -22,9 +22,9 @@
     min-height: 100vh;
 
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     
     background: linear-gradient(to bottom, #131f66 0%, #0c0c3f 100%);
 }

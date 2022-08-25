@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 
 import styles from '../../styles/Sections.module.css'
 import Bubbles from "../Bubbles";
+import Bubble from "../../styled/Bubble";
 
 import type { RootState } from '../../app/store'
 import { useSelector } from 'react-redux'
@@ -17,8 +18,11 @@ export default function Section4({ children }: Props) {
 
     return(
         <section className={darkMode ? styles.s4Dark : styles.s4Light}>
-            <Bubbles />
+            {/* <Bubbles /> */}
+            <div style={{animation: 'float 4s ease-in-out infinite'}}>
 
+            <Bubble />
+            </div>
 
             {children}   
          </section>

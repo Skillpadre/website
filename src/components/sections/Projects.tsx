@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import ProjectsBgStyled from "../../styled/ProjectsBgStyled";
 import HublotImg from "../../styled/HublotImg";
+import Bubble from "../../styled/Bubble";
 
 import bgScreen from "../../assets/screens/masques-screen.png";
 
@@ -21,7 +22,8 @@ export default function Projects({ children }: Props) {
             <div style={{margin: '50px', maxWidth: '50%'}}>
                 <Link to="/projects">
 
-                    <HublotImg bg={bgScreen} />
+                    {/* <HublotImg bg={bgScreen} /> */}
+                    <Bubble screen={bgScreen} />
                 </Link>
             </div>
             <div style={{margin: '50px', maxWidth: '50%'}}>
