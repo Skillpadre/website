@@ -11,13 +11,3 @@ li,
 ul {
   all: unset;
 }
-
-main {
-    background-image: 
-    url("./assets/ancre.png");
-
-    background-position: bottom ;
-    background-attachment: fixed;
-    background-size: 100px 100px;
-    background-repeat: no-repeat;
-}

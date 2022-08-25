@@ -1,7 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
+import BackButtonReducer from './reducers/BackButtonReducer'
+import DarkModeReducer from './reducers/DarkModeReducer'
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    backButton: BackButtonReducer,
+    darkMode: DarkModeReducer,
+  },
 })
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

@@ -5,8 +5,8 @@ import HublotImg from "../../styled/HublotImg";
 
 import bgScreen from "../../assets/screens/masques-screen.png";
 
-import styles from './styles/Projects.module.css'
-
+import type { RootState } from '../../app/store'
+import { useSelector } from 'react-redux'
 
 interface Props {
     children?: React.ReactNode;
@@ -14,16 +14,17 @@ interface Props {
 
 export default function Projects({ children }: Props) {
 
+    const darkMode = useSelector((state: RootState) => state.darkMode.value)
 
     return(
         <ProjectsBgStyled flexDir="row" justify="space-between" align="start">
-            <div className={styles.img} >
+            <div style={{margin: '50px', maxWidth: '50%'}}>
                 <Link to="/projects">
 
                     <HublotImg bg={bgScreen} />
                 </Link>
             </div>
-            <div className={styles.text}>
+            <div style={{margin: '50px', maxWidth: '50%'}}>
                 <h1>Projects</h1>
                 <p>
                     Voici mes différents projets. Vous pouvez cliquer sur l'image pour en savoir plus.
