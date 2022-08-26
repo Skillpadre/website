@@ -10,16 +10,16 @@ interface Props {
     alt?: string;
 }
 
-export default function HublotImg({src, alt}: Props) {
+export default function ImageProject({src, alt}: Props) {
 
     const Img = styled.img`
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 100%;
+    max-height: 100%;
 
-    widht: 600px;
+    // widht: 600px;
 
-    object-fit: cover;
-    cursor: pointer;
+    // object-fit: cover;
+    // cursor: pointer;
     `
 
   return (

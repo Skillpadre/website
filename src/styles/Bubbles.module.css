@@ -1,6 +1,9 @@
 
-.bubbles { height: 100% }
-.bubbles { padding: 100px 0 }
+.bubbles { 
+    height: 100%;
+    padding: 100px 0;
+    
+}
 .bubble {
     width: 60px;
     height: 60px;
@@ -49,10 +52,10 @@
 }
 @keyframes moveclouds { 
     0% { 
-        top: 500px;
+        top: 50vh;
     }
     100% { 
-        top: -1500px;
+        top: -250vh;
     }
 }
 

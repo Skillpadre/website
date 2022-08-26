@@ -1,37 +1,37 @@
-import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
-import ProjectsBgStyled from "../../styled/ProjectsBgStyled";
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import BackgroundProjectsStyled from "../../styled/BackgroundProjectsStyled";
+import TypoStyled from "../../styled/TypoAboutmeSection";
 import Bubble from "../../styled/Bubble";
-
-
-
 import bgScreen from "../../assets/screens/masques-screen.png";
 
+export default function Projects() {
 
-interface Props {
-    children?: React.ReactNode;
-}
+    return (
+        <BackgroundProjectsStyled>
+            <Box  sx={{ flexGrow: 1 }}>
+                <Grid container  direction="row-reverse" justifyContent="space-around" alignItems="center" >
+                    <Grid item xs={10} md={5} style={{ display: 'flex', justifyContent: "center" }} >
 
-export default function Projects({ children }: Props) {
+                        <div >
+                            <h1>Projects</h1>
+                            <TypoStyled>
+                                Voici mes différents projets. Vous pouvez cliquer sur l'image pour en savoir plus.
+                            </TypoStyled>
+                        </div>
+                    </Grid>
+                    <Grid mt={5} item xs={10} md={5}>
+                        <div style={{ display: 'flex', justifyContent: "center" }}>
 
-    return(
-        <ProjectsBgStyled flexDir="row" justify="space-between" align="start">
-            
-            <div style={{margin: '50px', maxWidth: '50%'}}>
-                <Link style={{animation: 'float 4s ease-in-out infinite'}} to="/projects">
-                    <Bubble translate="right" screen={bgScreen} />
-                </Link>
-            </div>
+                            <Link to="/projects">
+                                <Bubble translate="right" screen={bgScreen} />
+                            </Link>
+                        </div>
 
-            <div style={{margin: '50px', maxWidth: '50%'}}>
-                <h1>Projects</h1>
-                <p>
-                    Voici mes différents projets. Vous pouvez cliquer sur l'image pour en savoir plus.
-                </p>
-            </div>
-
-
-            {children}   
-         </ProjectsBgStyled>
+                    </Grid>
+                </Grid>
+            </Box>
+        </BackgroundProjectsStyled>
     )
 }
