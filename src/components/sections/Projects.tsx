@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import BackgroundProjectsStyled from "../../styled/BackgroundProjectsStyled";
+import TypoStyled from "../../styled/TypoAboutmeSection";
 import Bubble from "../../styled/Bubble";
 import bgScreen from "../../assets/screens/masques-screen.png";
 
@@ -15,9 +16,9 @@ export default function Projects() {
 
                         <div >
                             <h1>Projects</h1>
-                            <p>
+                            <TypoStyled>
                                 Voici mes différents projets. Vous pouvez cliquer sur l'image pour en savoir plus.
-                            </p>
+                            </TypoStyled>
                         </div>
                     </Grid>
                     <Grid mt={5} item xs={10} md={5}>

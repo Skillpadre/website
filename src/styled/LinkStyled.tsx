@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from '@emotion/styled';
 
 interface Props {
@@ -11,8 +10,11 @@ export default function LinkStyled({ children, to, target }: Props) {
 
     const LinkStyled = styled.a`
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
+    &:hover {
+        color: lightblue;
+    }
     `
     return (
         <LinkStyled href={to} target={target}>
