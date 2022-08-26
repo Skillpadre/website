@@ -22,12 +22,7 @@ export default function Home({ children }: Props) {
     width: 100%;
     min-height: 100vh;
 
-    background-image: ${darkMode ? `url(${boatNight})` : `url(${boatDay})`};
 
-    background-position: center;
-    background-size: 1920px 100%;
-    background-repeat: no-repeat;
-    /* background-size: cover; */ 
 
     // color: aquamarine;
     `

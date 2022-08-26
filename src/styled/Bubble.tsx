@@ -32,7 +32,7 @@ export default function Bubble({ screen, translate }: Props) {
 		radial-gradient(8% 8% at 28% 22%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
         url(${screen});
 
-    background-size: 120%;
+    background-size: 200%;
     background-repeat: no-repeat;
     background-position: center;
     

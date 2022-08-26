@@ -16,6 +16,7 @@ import Section5 from '../components/sections/Section5';
 import SmokeSection from '../components/sections/SmokeSection';
 import SecretSection from '../components/sections/SecretSection';
 
+import styles from "../styles/Main.module.css";
 
 function Homepage() {
   return (
@@ -27,13 +28,16 @@ function Homepage() {
       <div>
         {/* <NavBar /> */}
         <main>
+          <div className={styles.mainContenair}>
+
           <HomeSection />
           <AboutMeSection />
           <ProjectsSection />
           <Section4 />
-          <Section5 />
-          <SmokeSection />
+          {/* <Section5 />
+          <SmokeSection /> */}
           {/* <SecretSection /> */}
+          </div>
         </main>
         {/* <Footer /> */}
       </div>

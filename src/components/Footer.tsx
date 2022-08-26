@@ -3,6 +3,8 @@ import styled from '@emotion/styled';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 
+import bgFooter from '../assets/footer/footer.svg'
+
 export default function Footer() {
 
     const Footer = styled.footer`
@@ -10,11 +12,13 @@ export default function Footer() {
         justify-content: center;
         align-items: center;
 
-        background-color: #1D1C1E;
-        color: "white";
+        background-image: url(${bgFooter});
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         width: 100%;
-        min-height: 100px;
+        min-height: 400px;
 
         z-index: 9;
     `

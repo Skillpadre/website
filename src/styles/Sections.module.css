@@ -8,12 +8,7 @@
     justify-content: center;
 
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#233abc+0,131f66+100 */
-    background: linear-gradient(to bottom,  #233abc 0%,#131f66 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    background-color: aquamarine;
-    background-position: center;
-    background-size: 1920px 100%;
-    background-repeat: no-repeat;
-    /* background-size: cover; */
+    /* background: linear-gradient(to bottom,  #233abc 0%,#131f66 100%);  */
 }
 
 
@@ -25,7 +20,7 @@
     flex-direction: column;
     justify-content: center;
     
-    background: linear-gradient(to bottom, #131f66 0%, #0c0c3f 100%);
+    /* background: linear-gradient(to bottom, #131f66 0%, #0c0c3f 100%); */
 }
 
 .s4Dark {
@@ -36,7 +31,7 @@
     flex-direction: column;
     justify-content: center;
     
-    background: linear-gradient(to bottom, #090419 0%, #030109 100%);
+    /* background: linear-gradient(to bottom, #090419 0%, #030109 100%); */
 
 }
 
@@ -48,7 +43,7 @@
     flex-direction: row;
     justify-content: center;
     
-    background: linear-gradient(to bottom, #030109 0%, #000000 100%);
+    /* background: linear-gradient(to bottom, #030109 0%, #000000 100%); */
 }
 
 .s5Light {
@@ -59,7 +54,7 @@
     flex-direction: row;
     justify-content: center;
     
-    background: linear-gradient(to bottom, #0c0c3f 0%, #010111 100%);
+    /* background: linear-gradient(to bottom, #0c0c3f 0%, #010111 100%); */
 }
 
 
@@ -75,7 +70,7 @@
 
     margin-bottom: -100px;
     
-    background: linear-gradient(to bottom, #010111 0%, #000000 100%);
+    /* background: linear-gradient(to bottom, #010111 0%, #000000 100%); */
 }
 
 .s6Dark {
@@ -90,7 +85,7 @@
 
     margin-bottom: -100px;
     
-    background-color: #000000;
+    /* background-color: #000000; */
 }
 
 
