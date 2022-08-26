@@ -15,14 +15,10 @@ export default function ProjectsBgStyled({ children, flexDir, justify, align }: 
 
     const darkMode = useSelector((state: RootState) => state.darkMode.value)
 
-    const ProjectsBg = styled.div`
+    const ProjectsBg = styled.section`
     width: 100%;
     min-height: 100vh;
     
-    display: flex;
-    flex-direction: ${flexDir};
-    justify-content: ${justify};
-    align-items: ${align};
 
     background: ${darkMode 
         ? 'linear-gradient(to bottom,  #160A3A 0%,#090419 100%)' 
@@ -31,11 +27,6 @@ export default function ProjectsBgStyled({ children, flexDir, justify, align }: 
 
     color: aquamarine;
     z-index: 0;
-
-    @media screen and (max-width: 900px) {
-        flex-direction: column;
-        justify-content: center;
-    }
 
     `
 

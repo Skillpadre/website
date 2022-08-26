@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import Box from '@mui/material/Box';
+import CardProject from './CardImageProject';
 import ImgsProjectsStyled from './ImgsProjectsStyled';
 import TypoDescriptionProjectStyled from './TypoDescriptionProject';
 
@@ -41,7 +42,8 @@ export default function BoxItemStackProjects({ children, projet }: Props) {
     return (
         <>
             <BoxItem>
-                    <ImgsProjectsStyled src={require(`../assets/screens/${projet.img}`)} alt="masques" />
+                <CardProject projet={projet} />
+                    {/* <ImgsProjectsStyled src={require(`../assets/screens/${projet.img}`)} alt="masques" /> */}
                     <TypoDescriptionProjectStyled>
                         {projet.description}
                     </TypoDescriptionProjectStyled>

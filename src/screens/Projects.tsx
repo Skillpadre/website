@@ -1,12 +1,11 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import BoxItem from '../styled/BoxItemStackProjects'
 import ProjectsBgStyled from '../styled/ProjectsBgStyled';
 import ImgsProjectsStyled from '../styled/ImgsProjectsStyled';
 import TypoTitle from '../styled/TypoTitleStyled';
-import styles from '../components/sections/styles/Projects.module.css'
-import HublotImg from '../styled/HublotImg';
-import BoxItem from '../styled/BoxItemStackProjects'
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+
 import Stack from '@mui/material/Stack';
 
 import { useSelector, useDispatch } from 'react-redux'
@@ -102,32 +101,34 @@ function Projects() {
         return () => {
             dispatch(disableBackButton())
         }
-    } , [])
+    }, [])
 
-    
-  return (
-    <>
-            {/* <NavBar /> */}
 
-        <ProjectsBgStyled flexDir="column" justify='start' align='center'>
-            <TypoTitle>Mes projets</TypoTitle>
-            
-            <Box sx={{ width: '90%', marginBottom: '50px' }}>
-                <Stack direction="column"
-                        justifyContent="flex-start"
-                        alignItems="stretch" 
-                        spacing={5}
-                >
+    return (
+        <>
+            <ProjectsBgStyled>
+                <Box sx={{ flexGrow: 1 }}>
+                    <Grid container direction="column" alignItems="center">
 
-                    {projects.map((project, index) => (
-                        (<BoxItem projet={project} key={index}/>)
-                    ))}
-                </Stack>
+                    <TypoTitle>Mes projets</TypoTitle>
+
+                    <Box sx={{ width: '90%', marginBottom: '50px' }}>
+                        <Stack direction="column"
+                            justifyContent="flex-start"
+                            alignItems="stretch"
+                            spacing={5}
+                        >
+
+                            {projects.map((project, index) => (
+                                (<BoxItem projet={project} key={index} />)
+                            ))}
+                        </Stack>
+                    </Box>
+                    </Grid>
                 </Box>
-
-        </ProjectsBgStyled>
-    </>
-  );
+            </ProjectsBgStyled>
+        </>
+    );
 }
 
 export default Projects;

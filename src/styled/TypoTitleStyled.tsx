@@ -8,7 +8,7 @@ const TypoStyled = styled(Typography)({
     fontWeight: 'bold',
     color: 'aquamarine',
     textShadow: '1px 1px 1px #000',
-    margin: '1em 0 1em 0',
+    margin: '1em 0 0.5em 0',
     padding: '0 0 0 0',
     textAlign: 'center',
     textTransform: 'uppercase',

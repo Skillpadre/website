@@ -9,6 +9,10 @@ interface Props {
 
 export default function Bubble({ screen, translate }: Props) {
 
+    // fonction that return random value between 4 and 12
+    const animTime = Math.floor(Math.random() * (8 - 4 + 1)) + 4;
+    
+
     const Bubble = styled.div`
     
     width: 50vh;
@@ -92,7 +96,8 @@ export default function Bubble({ screen, translate }: Props) {
 
     return (
         <>
-            <div style={{ animation: 'float 8s ease-in-out infinite' }}>
+        {/* Animation float must be on parent */}
+            <div style={{ animation: `float ${animTime}s ease-in-out infinite` }}>
                 <Bubble />
             </div>
         </>
