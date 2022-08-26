@@ -9,14 +9,18 @@ interface Props {
 
 export default function Bubble({ screen, translate }: Props) {
 
+    // fonction that return random value between 4 and 12
+    const animTime = Math.floor(Math.random() * (8 - 4 + 1)) + 4;
+    
+
     const Bubble = styled.div`
     
-    width: 30em;
-	height: 30em;
+    width: 50vh;
+	height: 50vh;
     border-radius: 50%;
 
     cursor: pointer;
-	// position: relative;
+	position: relative;
 
     background-image:
 		radial-gradient(8% 8% at 22% 28%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
@@ -55,11 +59,9 @@ export default function Bubble({ screen, translate }: Props) {
 
 
         &:hover {
-            transform: translate(10%, 0);
             transform: scale(1.5) 
-            ${translate === "left" ? 'translate(-20%, 0)': null} 
-            ${translate === "right" ? 'translate(20%, 0)': null};
-            outline: none;
+            ${translate === "left" ? 'translate(-20%, 0)' : null} 
+            ${translate === "right" ? 'translate(20%, 0)' : null};
         }
 
     
@@ -84,13 +86,20 @@ export default function Bubble({ screen, translate }: Props) {
             }
         }
 
+        @media screen and (max-width: 900px) {
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+
     `
-    
+
     return (
         <>
-        <div style={{animation: 'float 8s ease-in-out infinite'}}>
-            <Bubble />
-        </div>
+        {/* Animation float must be on parent */}
+            <div style={{ animation: `float ${animTime}s ease-in-out infinite` }}>
+                <Bubble />
+            </div>
         </>
     )
 }

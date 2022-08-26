@@ -1,25 +1,4 @@
-import React, { useEffect } from 'react';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import BoxItem from '../styled/BoxItemStackProjects'
-import ProjectsBgStyled from '../styled/BackgroundProjectsStyled';
-import ImgsProjectsStyled from '../styled/ImgsProjectsStyled';
-import TypoTitle from '../styled/TypoTitleStyled';
-
-import Stack from '@mui/material/Stack';
-
-import { useSelector, useDispatch } from 'react-redux'
-import { enableBackButton, disableBackButton } from '../app/reducers/BackButtonReducer'
-
-const bgScreen = require('../assets/screens/masques-screen.png');
-
-const screenPath = '../assets/screens/';
-
-const lorem1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat "
-
-const lorem2 = "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-export type projet = {
+type projet = {
     name: string;
     description: string;
     img: string;
@@ -91,44 +70,5 @@ const projects: projet[] = [
         link: "https://pure-escarpment-44226.herokuapp.com/"
     },
 ]
-function Projects() {
 
-    const dispatch = useDispatch()
-
-
-    useEffect(() => {
-        dispatch(enableBackButton())
-        return () => {
-            dispatch(disableBackButton())
-        }
-    }, [])
-
-
-    return (
-        <>
-            <ProjectsBgStyled>
-                <Box sx={{ flexGrow: 1 }}>
-                    <Grid container direction="column" alignItems="center">
-
-                    <TypoTitle>Mes projets</TypoTitle>
-
-                    <Box sx={{ width: '90%', marginBottom: '50px' }}>
-                        <Stack direction="column"
-                            justifyContent="flex-start"
-                            alignItems="stretch"
-                            spacing={5}
-                        >
-
-                            {projects.map((project, index) => (
-                                (<BoxItem projet={project} key={index} />)
-                            ))}
-                        </Stack>
-                    </Box>
-                    </Grid>
-                </Box>
-            </ProjectsBgStyled>
-        </>
-    );
-}
-
-export default Projects;
+export default projects;
