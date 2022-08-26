@@ -6,19 +6,15 @@ import { useSelector } from 'react-redux'
 
 interface Props {
     children?: React.ReactNode;
-    flexDir?: string;
-    justify?: string;
-    align?: string;
 }
 
-export default function ProjectsBgStyled({ children, flexDir, justify, align }: Props) {
+export default function ProjectsBgStyled({ children}: Props) {
 
     const darkMode = useSelector((state: RootState) => state.darkMode.value)
 
-    const ProjectsBg = styled.section`
+    const Section = styled.section`
     width: 100%;
     min-height: 100vh;
-    
 
     background: ${darkMode 
         ? 'linear-gradient(to bottom,  #160A3A 0%,#090419 100%)' 
@@ -27,12 +23,11 @@ export default function ProjectsBgStyled({ children, flexDir, justify, align }: 
 
     color: aquamarine;
     z-index: 0;
-
     `
 
     return (
-        <ProjectsBg>
+        <Section>
             {children}
-        </ProjectsBg>
+        </Section>
     )
 }
