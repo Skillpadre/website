@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux'
 
 import boatDay from "../../assets/backgrounds/JapBoat_Day.png";
 import boatNight from "../../assets/backgrounds/JapBoat_Night.png";
+import Bubbles3 from "../Bubbles3";
 
 interface Props {
     children?: React.ReactNode;
@@ -37,7 +38,7 @@ export default function Home({ children }: Props) {
 
     return(
         <Section>
-            
+            <Bubbles3 />
 
             {children}   
          </Section>

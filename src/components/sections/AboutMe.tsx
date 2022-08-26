@@ -1,56 +1,42 @@
-import React, { useState, useEffect } from "react";
-import styled from '@emotion/styled';
+import React from "react";
 import { Link } from "react-router-dom";
-import HublotImg from "../../styled/HublotImg";
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import BackgroundAboutMeStyled from "../../styled/BackgroundAboutMeStyled";
 import Bubble from "../../styled/Bubble";
-
 import bgScreen from "../../assets/screens/eny-screen.png";
 
-import type { RootState } from '../../app/store'
-import { useSelector } from 'react-redux'
+export default function AboutMeSection() {
 
-interface Props {
-    children?: React.ReactNode;
-}
-
-export default function AboutMeSection({ children }: Props) {
-
-    const darkMode = useSelector((state: RootState) => state.darkMode.value)
-
-    const Section = styled.section`
-
-    width: 100%;
-    min-height: 100vh;
-
-    display: flex;
-    justify-content: space-between;
-
-
-    background: ${darkMode ? 'linear-gradient(to bottom,  #1C136C 0%,#160A3A 100%)' : 'linear-gradient(to bottom,  #619fe4 0%,#233abc 100%)'}; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    
-    background-size: 1920px 100%;
-
-    color: aquamarine;
-    `
 
     return (
-        <Section>
+        <BackgroundAboutMeStyled>
+            <Box sx={{ flexGrow: 1 }}>
+                <Grid container direction="row" justifyContent="space-around" alignItems="center" >
+                    <Grid item xs={10} md={5} style={{ display: 'flex', flexDirection: "column", justifyContent: "center" }} >
 
-            <div style={{ margin: '50px', maxWidth: '50%' }}>
-                <h1>About me</h1>
-                <p>
-                    I'm a 21 years old developer from Poland. I'm currently studying Computer Science at the University of Warsaw. I'm interested in web development, especially in frontend. I'm also interested in game development and I'm currently learning Unity. I'm also interested in machine learning and I'm currently learning Python.
-                </p>
-            </div>
+                            <h1>About me</h1>
+                            <p>
+                            Bonjour!
+                            </p>
+                            <p>
+                            Je m'appelle Christophe Applanat et je suis développeur web junior fullstack. Cela n'a pas toujours été le cas, mais lorsque j'ai découvert le développement web, je me suis lancée avec l'école "La Capsule" pour un Coding Bootcamp. Cette expérience a été pour moi très enrichissante, car j'ai découvert tout un univers, et j'ai appris beaucoup de choses. Aujourd'hui, je ne cesse de faire évoluer mes compétences en me formant et en me documentant. Et je peux vous dire que j'y prends vraiment du plaisir! Je vous souhaite donc la bienvenue sur mon portfolio et n'hésitez pas à me contacter.
+                            </p> 
+                            <p>
+                                Bonne visite!
+                            </p>
+                    </Grid>
+                    <Grid mt={5} item xs={12} md={5}>
+                        <div style={{ display: 'flex', justifyContent: "center" }}>
 
-            <div style={{ margin: '50px', maxWidth: '50%' }} >
-                <Link to="/aboutme  ">
-                <Bubble translate="left" screen={bgScreen} />
-                </Link>
+                            <Link to="/aboutme  ">
+                                <Bubble translate="left" screen={bgScreen} />
+                            </Link>
+                        </div>
 
-            </div>
-
-            {children}
-        </Section>
+                    </Grid>
+                </Grid>
+            </Box>
+        </ BackgroundAboutMeStyled>
     )
 }
