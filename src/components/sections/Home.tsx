@@ -22,10 +22,6 @@ export default function Home({ children }: Props) {
     width: 100%;
     min-height: 100vh;
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
     background-image: ${darkMode ? `url(${boatNight})` : `url(${boatDay})`};
 
     background-position: center;
@@ -33,7 +29,7 @@ export default function Home({ children }: Props) {
     background-repeat: no-repeat;
     /* background-size: cover; */ 
 
-    color: aquamarine;
+    // color: aquamarine;
     `
 
     return(

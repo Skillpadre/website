@@ -18,7 +18,7 @@ export default function Section4({ children }: Props) {
 
     return(
         <section className={darkMode ? styles.s4Dark : styles.s4Light}>
-            <Bubbles />
+            {/* <Bubbles /> */}
             {/* <Bubbles2 /> */}
 
             {children}   

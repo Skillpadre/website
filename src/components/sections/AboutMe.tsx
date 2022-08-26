@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LinkStyled from "../../styled/LinkStyled";
+import TypoStyled from "../../styled/TypoAboutmeSection";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import BackgroundAboutMeStyled from "../../styled/BackgroundAboutMeStyled";
@@ -16,15 +18,16 @@ export default function AboutMeSection() {
                     <Grid item xs={10} md={5} style={{ display: 'flex', flexDirection: "column", justifyContent: "center" }} >
 
                             <h1>About me</h1>
-                            <p>
-                            Bonjour!
-                            </p>
-                            <p>
-                            Je m'appelle Christophe Applanat et je suis développeur web junior fullstack. Cela n'a pas toujours été le cas, mais lorsque j'ai découvert le développement web, je me suis lancée avec l'école "La Capsule" pour un Coding Bootcamp. Cette expérience a été pour moi très enrichissante, car j'ai découvert tout un univers, et j'ai appris beaucoup de choses. Aujourd'hui, je ne cesse de faire évoluer mes compétences en me formant et en me documentant. Et je peux vous dire que j'y prends vraiment du plaisir! Je vous souhaite donc la bienvenue sur mon portfolio et n'hésitez pas à me contacter.
-                            </p> 
-                            <p>
-                                Bonne visite!
-                            </p>
+                            <TypoStyled>
+                            Salut !
+                            Je m'appelle Christophe Applanat, je suis développeur web junior. Ce n'était pas mon domaine d'étude à la base, mais montrant un intérêt particulier pour la programamtion, je me suis mis à apprendre le code.
+                            <br />J'ai d'abord commencer par apprendre l'algorithmie tout seul 
+                            sur <LinkStyled to="https://info.openclassrooms.com/fr" target="blank">OpenClassRoom</LinkStyled> avant
+                            de faire des formations spécialisantes dans le web.
+                            Je me suis lancée avec l'école "La Capsule" pour un Coding Bootcamp JavaScript, puis avec la Wild Code School pour une formation Blockchain. Ces expériences ont été pour moi très enrichissantes, car j'ai découvert tout un univers, et j'ai appris beaucoup de choses.
+                            Aujourd'hui, je ne cesse de faire évoluer mes compétences en me formant et en me documentant. Et je peux vous dire que j'y prends vraiment du plaisir ! 
+                            Je vous laisse plonger au coeur de mon portfolio et découvrir les secret qui se cachent dans les profondeurs.
+                            </TypoStyled>
                     </Grid>
                     <Grid mt={5} item xs={12} md={5}>
                         <div style={{ display: 'flex', justifyContent: "center" }}>
