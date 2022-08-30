@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import styled from '@emotion/styled';
 
 const TypoStyled = styled(Typography)({
-    fontFamily: 'Aladin',
+    fontFamily: 'Fira_Sans_Condensed',
     fontWeight: 'bold',
     color: 'aquamarine',
     textShadow: '1px 1px 1px #000',

@@ -20,7 +20,7 @@ export default function Home({ children }: Props) {
     const Section = styled.section`
 
     width: 100%;
-    min-height: 100vh;
+    min-height: 200vh;
 
 
 
@@ -29,7 +29,7 @@ export default function Home({ children }: Props) {
 
     return(
         <Section>
-            <Bubbles3 />
+            {/* <Bubbles3 /> */}
 
             {children}   
          </Section>

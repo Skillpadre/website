@@ -23,10 +23,7 @@ export default function AboutMeBgStyled({ children }: Props) {
     width: 100%;
     min-height: 100vh;
 
-   
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    
-    color: aquamarine;
+       
     z-index: 0;
 
     @media screen and (max-width: 900px) {
