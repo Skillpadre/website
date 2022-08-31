@@ -20,7 +20,7 @@ interface Props {
     projet: projet;
 }
 
-export default function BoxItemStackProjects({ children, projet }: Props) {
+export default function BoxItemsProjects({ children, projet }: Props) {
 
     const BoxItem = styled(Box)({
         display: 'flex',

@@ -30,12 +30,29 @@ body {
 
 h2 {
   font-family: 'Fira_Sans_Condensed';
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 115.2px;
+
+  text-align: center;
+
 }
 
 h3 {
   font-family: 'Aladin';
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 78px;
+  text-align: center;
 }
 
 p {
   font-family: 'Montaga';
+}
+
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 64px;
+    line-height: 80px;
+  }
 }

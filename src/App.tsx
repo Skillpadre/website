@@ -21,9 +21,9 @@ function App() {
 
   return (
     <>
-      <NavBar>
-        {/* <IconButtonReturn /> */}
-      </NavBar>
+      {/* <NavBar>
+        <IconButtonReturn />
+      </NavBar> */}
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/projects" element={<Projects />} />

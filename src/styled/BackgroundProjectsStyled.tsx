@@ -15,10 +15,6 @@ export default function ProjectsBgStyled({ children}: Props) {
     const Section = styled.section`
     width: 100%;
     min-height: 100vh;
-
-
-
-    color: aquamarine;
     z-index: 0;
     `
 

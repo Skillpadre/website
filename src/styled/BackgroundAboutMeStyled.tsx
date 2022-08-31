@@ -22,8 +22,6 @@ export default function AboutMeBgStyled({ children }: Props) {
     const Section = styled.section`
     width: 100%;
     min-height: 100vh;
-
-       
     z-index: 0;
 
     @media screen and (max-width: 900px) {
