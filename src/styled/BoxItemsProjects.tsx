@@ -18,9 +18,10 @@ type projet = {
 interface Props {
     children?: React.ReactNode;
     projet: projet;
+    onClick: () => void;
 }
 
-export default function BoxItemsProjects({ children, projet }: Props) {
+export default function BoxItemsProjects({ children, projet, onClick }: Props) {
 
     const BoxItem = styled(Box)({
         display: 'flex',
@@ -42,13 +43,12 @@ export default function BoxItemsProjects({ children, projet }: Props) {
 
     return (
         <>
-            <Box sx={{ flexGrow: 1 }} >
-                <Grid container direction="row" justifyContent="space-around" alignItems="center">
-                    <Grid item xs={12} md={6}>
+            <Box onClick={onClick} sx={{ flexGrow: 1 }} >
+                <Grid container direction="row" justifyContent="space-around" alignItems="start">
+                    <Grid item xs={10} sm={10} md={5}>
                         <CardProject projet={projet} />
-                        {/* <ImgsProjectsStyled src={require(`../assets/screens/${projet.img}`)} alt="masques" /> */}
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={10} sm={10} md={5}>
                         <TypoDescriptionProjectStyled>
                             {projet.description}
                         </TypoDescriptionProjectStyled>

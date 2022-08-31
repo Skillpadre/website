@@ -8,19 +8,23 @@ import screen from '../assets/screens/masques-screen.png';
 interface Props {
     src?: string;
     alt?: string;
+    to?: string;
 }
 
-export default function ImageProject({src, alt}: Props) {
+export default function ImageButtonProject({src, alt, to}: Props) {
 
-    const Img = styled.img`
-    max-width: 100%;
-    max-height: 100%;
-    z-index: 0;
+    const A = styled.a`
+    width: 74.56px;
+    height: 67.98px;
+
+    z-index: 1;
     `
 
   return (
     <>
-        <Img src={src} alt={alt} />
+        <A href={to} target="blank">
+        <img src={src} alt={alt} />
+        </A>
     </>
   );
 }

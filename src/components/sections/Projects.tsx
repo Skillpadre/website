@@ -1,4 +1,6 @@
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
+import styled from "@emotion/styled";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import BackgroundProjectsStyled from "../../styled/BackgroundProjectsStyled";
@@ -82,14 +84,46 @@ const projects: projet[] = [
 
 export default function Projects() {
 
+    const [projectIndex, setProjectIndex] = useState(0);
+
+
+    const Div1 = styled.div({
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        overflowX: 'scroll',
+    })
+
+    const handleClick = () => {
+        console.log("click");
+        if(projectIndex === projects.length - 1)
+            setProjectIndex(0);
+        else
+            setProjectIndex(projectIndex + 1);
+        console.log(projectIndex);
+    }
+
+    const handleScroll = () => {
+        console.log("scroll");
+    }
+
+    const projectsList = projects.map((project, index) => {
+
+        return (<BoxItemsProjects onClick={handleClick} projet={project} key={index} />)
+    })
+
     return (
         <BackgroundProjectsStyled>
             <Box sx={{ flexGrow: 1 }}>
-                <Grid container mx={20} md={10} direction="column" justifyContent="center" alignItems="start" >
-                    <h2>Mes Projets</h2>
-                        
-                    <BoxItemsProjects projet={projects[0]} />
- 
+                <Grid container direction="column" justifyContent="center" alignItems="center" >
+                    <h2 onScroll={handleScroll}>Mes Projets</h2>
+                        {/* <Div1>
+                            {projectsList}
+                        </Div1> */}
+                        {projectsList[projectIndex]}
+
+                    {/* <BoxItemsProjects projet={projects[0]} /> */}
+
                 </Grid>
             </Box>
         </BackgroundProjectsStyled>

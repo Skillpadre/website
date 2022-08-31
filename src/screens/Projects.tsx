@@ -119,9 +119,9 @@ function Projects() {
                                 spacing={5}
                             >
 
-                                {projects.map((project, index) => (
+                                {/* {projects.map((project, index) => (
                                     (<BoxItem projet={project} key={index} />)
-                                ))}
+                                ))} */}
                             </Stack>
                         </Box>
                     </Grid>

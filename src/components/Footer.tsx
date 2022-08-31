@@ -39,21 +39,7 @@ const Item = styled(Paper)({
                     <Item>GitHub 2</Item>
                     <Item>Email 3</Item>
                 </Stack>
-                {/* <div className={styles.footer}> */}
-            {/* <p>
-                <a href="https://www.linkedin.com/in/joseph-m-b-a-b8a8b917b/">  LinkedIn</a>
-            </p>
-            <p>
-                <a href="
             
-            ">  GitHub</a>
-            </p>
-            <p>
-                <a href="
-
-">  Email</a>
-            </p> */}
-{/* </div> */}
             </Footer>
         </>
     );

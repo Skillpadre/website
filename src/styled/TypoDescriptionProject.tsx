@@ -3,17 +3,20 @@
 import Typography from '@mui/material/Typography';
 import styled from '@emotion/styled';
 
-const TypoStyled = styled(Typography)({
-    margin: '0 50px 0 50px',
-    color: 'aquamarine',
-    textAlign: 'center',
-    
-    fontFamily: 'Roboto, sans-serif',
-    '@media (max-width: 900px)': {
-        margin: '20px 0 0 0',
+const TypoStyled = styled.p`
+font-family: 'Montaga';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+text-align: justify;
 
-    },
-});
+@media screen and (max-width: 900px) {
+    margin-top: 50px;
+}
+`
 
 export default function TypoDescriptionProjectStyled({ children }: any) {
     return (
