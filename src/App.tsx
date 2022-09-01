@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import IconButtonReturn from './styled/ButtonReturnStyled';
 import { useNavigate } from 'react-router-dom';
+import SmokeSection from './components/sections/SmokeSection';
 
 import {
   Routes,
@@ -31,6 +32,7 @@ function App() {
       </Routes>
 
       <Footer />
+      <SmokeSection />
 
 
     </>

@@ -23,24 +23,6 @@ interface Props {
 
 export default function BoxItemsProjects({ children, projet, onClick }: Props) {
 
-    const BoxItem = styled(Box)({
-        display: 'flex',
-        flexDirection: 'row',
-        //justifyContent: 'space-between',
-        //alignItems: 'center',
-
-        width: '100%',
-
-        margin: '50px 0 0 0',
-
-        '@media (max-width: 600px)': {
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-
-        },
-    });
-
     return (
         <>
             <Box onClick={onClick} sx={{ flexGrow: 1 }} >

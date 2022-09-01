@@ -36,14 +36,14 @@ export default function CardImageProject({ projet }: Props) {
 
     return (
         <Box sx={{ flexGrow: 1, maxWidth: '100%' }}>
-            <div style={{position: 'relative'}}>
+            <div style={{ position: 'relative' }}>
 
-                    <ImgsProjectsStyled src={require(`../assets/screens/${projet.img}`)} alt={projet.name} />
-                    <Div>
-                    <ImgButtonShowProject to={projet.link} src={require('../assets/buttons/show_button.png')} alt="Voir le site"/>
-
-                    <ImgButtonGHProject to={projet.github} src={require('../assets/buttons/github_button.png')} alt="Voir le github"/>
-                    </Div>
+                <ImgsProjectsStyled src={require(`../assets/screens/${projet.img}`)} alt={projet.name} />
+                <Div>
+                    {projet.link !== "" ? <ImgButtonShowProject to={projet.link} src={require('../assets/buttons/show_button.png')} alt="Voir le site" />
+                        : null}
+                    {projet.github !== "" ? <ImgButtonGHProject to={projet.github} src={require('../assets/buttons/github_button.png')} alt="Voir le github" />
+                        : null}                    </Div>
             </div>
         </Box>
     );
