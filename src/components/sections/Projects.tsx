@@ -8,6 +8,8 @@ import TypoStyled from "../../styled/TypoAboutmeSection";
 import Bubble from "../../styled/Bubble";
 import bgScreen from "../../assets/screens/masques-screen.png";
 import BoxItemsProjects from "../../styled/BoxItemsProjects";
+import TitleAnimated from "../../styled/TitleProjectsAnimated";
+import TitleProjectsAnimated from "../../styled/TitleProjectsAnimated";
 
 export type projet = {
     name: string;
@@ -125,7 +127,7 @@ export default function Projects() {
         <BackgroundProjectsStyled>
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container direction="column" justifyContent="center" alignItems="center" >
-                    <h2 onScroll={handleScroll}>Mes Projets</h2>
+                    <TitleProjectsAnimated>Mes Projets</TitleProjectsAnimated>
                         {/* <Div1>
                             <Div2>
 
@@ -136,7 +138,10 @@ export default function Projects() {
                             <BoxItemsProjects onClick={handleClick} projet={projects[3]} key={4} />
                             </Div2>
                         </Div1> */} 
+                        <div>
+
                         {projectsList[projectIndex]}
+                        </div>
 
                     {/* <BoxItemsProjects projet={projects[0]} /> */}
 

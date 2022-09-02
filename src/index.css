@@ -1,7 +1,7 @@
-#root{
+/* #root{
   height: 100vh;
   width: 100vw;
-}
+} */
 
 body {
   overflow-x: hidden;
@@ -37,9 +37,7 @@ h2 {
   font-size: 96px;
   font-weight: 600;
   line-height: 115.2px;
-
   text-align: center;
-
 }
 
 h3 {
@@ -55,9 +53,29 @@ p {
   font-family: 'Montaga';
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1200px) {
   h2 {
     font-size: 64px;
-    line-height: 80px;
+    line-height: 96px;
+  }
+
+  h3 {
+    font-size: 48px;
+    line-height: 64px;
+    
   }
 }
+
+@media screen and (max-width: 900px) {
+  h2 {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 32px;
+    
+  }
+}
+

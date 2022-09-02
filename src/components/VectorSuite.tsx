@@ -22,16 +22,11 @@ export default function VectorSuite({ children }: Props) {
         min-height: 114px;
     `
 
-    const H3 = styled.h3`
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 78px;
-    `
     
     return (
         <>
             <Div >
-                <H3>Suite</H3>
+                <h3>Mon CV</h3>
                 {children}
             </Div>
         </>

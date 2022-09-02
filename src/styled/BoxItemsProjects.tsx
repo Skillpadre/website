@@ -23,8 +23,26 @@ interface Props {
 
 export default function BoxItemsProjects({ children, projet, onClick }: Props) {
 
+    const Div = styled.div`
+    animation: fade-in 4s 1s 1 normal fadein;
+
+    
+
+  @keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+    `
+
     return (
         <>
+        <Div>
+
             <Box onClick={onClick} sx={{ flexGrow: 1 }} >
                 <Grid container direction="row" justifyContent="space-around" alignItems="start">
                     <Grid item xs={10} sm={10} md={5}>
@@ -37,6 +55,7 @@ export default function BoxItemsProjects({ children, projet, onClick }: Props) {
                     </Grid>
                 </Grid>
             </Box>
+        </Div>
         </>
     );
 }
