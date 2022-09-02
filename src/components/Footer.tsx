@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
 import ImgSocialsMedia from '../styled/ImgSocialsMedia';
+import SocialsMedia from '../styled/SocialMedia';
 import TypoNameFooter from '../styled/TypoNameFooter';
 import TypoCopyright from "../styled/TypoCopyright";
 
@@ -14,7 +15,7 @@ export default function Footer() {
 
     const Footer = styled.footer`
         display: flex;
-        //justify-content: end;
+        //justify-content: start;
         align-items: end;
 
         background-image: url(${bgFooter});
@@ -26,7 +27,10 @@ export default function Footer() {
         min-height: 400px;
 
         z-index: 9;
-    `
+
+        @media screen and (max-width: 600px) {
+            background-position: bottom;
+            `
 
 
 
@@ -36,28 +40,27 @@ export default function Footer() {
             <Footer >
 
                 <Box sx={{ flexGrow: 1, maxWidth: '100%' }}>
-                    <Grid container 
-                        direction={{ sx:'column', sm:'row', md:'row', lg:'row' }}
-                        justifyContent="space-around" alignItems="end" 
-                        >
-                        <Grid item direction="column" justifyContent="center" alignItems="center" >
-                            <Grid item >
-                            <TypoNameFooter>Christophe Applanat</TypoNameFooter>
-
-                            </Grid>
-                            <Grid item >
-                            <TypoCopyright>Copyright ©	2022 Christophe Applanat. All Rights Reserved</TypoCopyright>
-                            </Grid>
+                    <Grid container mb={{sm:2, md: 3, lg: 5, xl: 5}} spacing={{md: 0, lg: -15, xl: -20}} 
+                        direction={{ xs: 'column', sm: 'row' }}
+                        justifyContent="space-around" 
+                    >
+                        <Grid item >
+                                <TypoNameFooter>Christophe Applanat</TypoNameFooter>
+                                <TypoCopyright>Copyright ©	2022 Christophe Applanat. All Rights Reserved</TypoCopyright>
                         </Grid>
+
+                        
 
                         <Grid item >
                             <Stack
-                                direction='column'
-                                spacing={{ xs: 1, sm: 2, md: 4, lg: 3, xl: 18 }}
+                                direction={{xs: 'row', sm: 'column'}}
+                                justifyContent={{xs: "center"}}
+                                spacing={1}
                             >
-                                <ImgSocialsMedia name="linkedin" />
-                                <ImgSocialsMedia name="github" />
-                                <ImgSocialsMedia name="mail" />
+                                <SocialsMedia name="linkedin" text="Linked In" link="" />
+                                <SocialsMedia name="github" text="GitHub" link="" />
+                                <SocialsMedia name="mail" text="c.applanat@gmail.com" link="" />
+
                             </Stack>
                         </Grid>
 

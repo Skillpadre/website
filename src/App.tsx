@@ -31,8 +31,8 @@ function App() {
         <Route path="/aboutme" element={<AboutMe />} />
       </Routes>
 
-      <Footer />
-      <SmokeSection />
+      {/* <Footer /> */}
+      {/* <SmokeSection /> */}
 
 
     </>

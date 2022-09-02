@@ -33,13 +33,13 @@ function Homepage() {
           <HomeSection />
           <AboutMeSection />
           <ProjectsSection />
-          <Section4 />
+          {/* <Section4 /> */}
           {/* <Section5 />
           <SmokeSection /> */}
           {/* <SecretSection /> */}
           </div>
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

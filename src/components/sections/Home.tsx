@@ -20,7 +20,7 @@ export default function Home({ children }: Props) {
     const Section = styled.section`
 
     width: 100%;
-    min-height: 200vh;
+    min-height: 100vh;
 
 
 

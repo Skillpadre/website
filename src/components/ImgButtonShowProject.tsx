@@ -16,6 +16,8 @@ export default function ImageButtonProject({src, alt, to}: Props) {
     const A = styled.a`
     width: 74.56px;
     height: 67.98px;
+    cursor: pointer;
+
 
     z-index: 1;
     `

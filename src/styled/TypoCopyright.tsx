@@ -11,7 +11,6 @@ line-height: 12.6px;
 text-align: center;
 
 @media screen and (max-width: 900px) {
-    margin-top: 50px;
 }
 `
 

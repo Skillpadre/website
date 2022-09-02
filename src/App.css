@@ -4,3 +4,7 @@ li,
 ul {
   all: unset;
 }
+
+a {
+  cursor: pointer;
+}

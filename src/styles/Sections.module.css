@@ -73,7 +73,7 @@
     /* background: linear-gradient(to bottom, #010111 0%, #000000 100%); */
 }
 
-.s6Dark {
+.s6 {
     width: 100%;
     min-height: 100vh;
     
@@ -84,7 +84,7 @@
     align-items: center;
 
     margin-bottom: -100px;
-    
+    background: linear-gradient(to bottom, #161616 0%, #000000 100%);
     /* background-color: #000000; */
 }
 

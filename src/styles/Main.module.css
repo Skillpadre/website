@@ -1,4 +1,7 @@
 .mainContenair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url('../assets/fullBG/bgSeaFish.svg');
 
     overflow: hidden;
