@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid';
 
 import ImgSocialsMedia from '../styled/ImgSocialsMedia';
 import SocialsMedia from '../styled/SocialMedia';
+import SocialsMediaLinked from '../styled/SocialMediaLinked';
 import TypoNameFooter from '../styled/TypoNameFooter';
 import TypoCopyright from "../styled/TypoCopyright";
 
@@ -57,8 +58,8 @@ export default function Footer() {
                                 justifyContent={{xs: "center"}}
                                 spacing={1}
                             >
-                                <SocialsMedia name="linkedin" text="Linked In" link="" />
-                                <SocialsMedia name="github" text="GitHub" link="" />
+                                <SocialsMediaLinked name="linkedin" text="Linked In" link="https://www.linkedin.com/in/christophe-applanat/" />
+                                <SocialsMediaLinked name="github" text="GitHub" link="https://github.com/ChristopheApp" />
                                 <SocialsMedia name="mail" text="c.applanat@gmail.com" link="" />
 
                             </Stack>

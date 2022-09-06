@@ -23,12 +23,19 @@ font-size: 12px;
 line-height: 15px;
     `
 
+    const A = styled.a`
+    cursor: pointer;
+
+    `
+
   return (
     <> 
+    <A href={link} target="_blank" rel="noreferrer">
         <Div>
             <ImgSocialsMedia name={name} />
             <Typo>{text}</Typo>
         </Div>
+    </A>
     </>
   );
 }

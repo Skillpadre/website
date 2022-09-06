@@ -8,7 +8,7 @@ import TypoTitle from '../styled/TypoTitleStyled';
 
 import Stack from '@mui/material/Stack';
 
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { enableBackButton, disableBackButton } from '../app/reducers/BackButtonReducer'
 
 const bgScreen = require('../assets/screens/masques-screen.png');

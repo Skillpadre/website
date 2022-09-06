@@ -30,17 +30,18 @@ export default function AboutMeSection() {
                     <GridItemAboutMe direction="row-reverse">
                         <h3>Mon parcours</h3>
                         <TypoStyled>
-                            J'ai d'abord commencer par apprendre l'algorithmie tout seul
+                            J'ai d'abord commencer par apprendre l'algorithmie
                             sur <LinkStyled to="https://info.openclassrooms.com/fr" target="blank">OpenClassRoom</LinkStyled> avant
                             de faire des formations spécialisantes dans le web.
-                            Je me suis lancée avec l'école "La Capsule" pour un Coding Bootcamp JavaScript, puis avec la Wild Code School pour une formation Blockchain. Ces expériences ont été pour moi très enrichissantes, car j'ai découvert tout un univers, et j'ai appris beaucoup de choses.
+                            Je me suis lancée avec l'école La Capsule pour un Coding Bootcamp JavaScript, puis avec la Wild Code School pour une formation Blockchain. 
+                            Ces expériences ont été pour moi très enrichissantes, car j'ai découvert tout un univers, et j'ai appris beaucoup de choses.
                         </TypoStyled>
                     </GridItemAboutMe>
 
                     <GridItemAboutMe direction="row">
                         <h3>Maintenant</h3>
                         <TypoStyled>
-                            Aujourd'hui, je ne cesse de faire évoluer mes compétences en me formant et en me documentant. Et je peux vous dire que j'y prends vraiment du plaisir !
+                            Aujourd'hui, je ne cesse de faire évoluer mes compétences en me formant, en me documentant, et en réalisant des projets.
                             Je vous laisse plonger au coeur de mon portfolio et découvrir les secret qui se cachent dans les profondeurs.
                         </TypoStyled>
                     </GridItemAboutMe>

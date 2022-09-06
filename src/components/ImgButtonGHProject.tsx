@@ -23,7 +23,7 @@ export default function ImageButtonProject({ src, alt, to }: Props) {
 
   return (
     <>
-      <A href={to} target="blank">
+      <A href={to} rel="noreferer" target="blank">
         <img src={src} alt={alt} />
       </A>
     </>

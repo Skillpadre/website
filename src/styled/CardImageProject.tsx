@@ -20,9 +20,10 @@ type projet = {
 
 interface Props {
     projet: projet;
+    onClick?: () => void;
 }
 
-export default function CardImageProject({ projet }: Props) {
+export default function CardImageProject({ projet, onClick }: Props) {
 
     const Div = styled.div`
         display: flex;
@@ -38,7 +39,7 @@ export default function CardImageProject({ projet }: Props) {
         <Box sx={{ flexGrow: 1, maxWidth: '100%' }}>
             <div style={{ position: 'relative' }}>
 
-                <ImgsProjectsStyled src={require(`../assets/screens/${projet.img}`)} alt={projet.name} />
+                <ImgsProjectsStyled onClick={onClick} src={require(`../assets/screens/${projet.img}`)} alt={projet.name} />
                 <Div>
                     {projet.link !== "" ? <ImgButtonShowProject to={projet.link} src={require('../assets/buttons/show_button.png')} alt="Voir le site" />
                         : null}

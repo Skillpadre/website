@@ -32,6 +32,10 @@ body {
   src: local('Halant'), url(./fonts/Halant/Halant-Regular.ttf) format('truetype');
 }
 
+h1 {
+  margin: 0;
+}
+
 h2 {
   font-family: 'Fira_Sans_Condensed';
   font-size: 96px;

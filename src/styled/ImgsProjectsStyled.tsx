@@ -8,9 +8,10 @@ import screen from '../assets/screens/masques-screen.png';
 interface Props {
     src?: string;
     alt?: string;
+    onClick?: () => void;
 }
 
-export default function ImageProject({src, alt}: Props) {
+export default function ImageProject({src, alt, onClick}: Props) {
 
     const Img = styled.img`
     max-width: 100%;
@@ -20,7 +21,7 @@ export default function ImageProject({src, alt}: Props) {
 
   return (
     <>
-        <Img src={src} alt={alt} />
+        <Img onClick={onClick} src={src} alt={alt} />
     </>
   );
 }

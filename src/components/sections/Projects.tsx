@@ -35,21 +35,21 @@ const projects: projet[] = [
     },
     {
         name: "ENY Token",
-        description: "ENY Token est un site qui ne se met pas au milieu pourquoi ca fait ca bordel, les autres se mettent bien au middle et lui non, ca rend fou putain de merde, et voila ca se met au middle quand c'est trop long",
+        description: "ENY Token est un site qui présente le token En Y, un token ERC20 développé sur la blockchain Ethereum. Il est doté d'une dApp qui permet d'acheter des tokens",
         img: "eny-screen.png",
         github: "https://github.com/ChristopheApp/Eny-front",
         link: "https://eny-token.vercel.app/"
     },
     {
         name: "SpendCoin dApp",
-        description: "Spend Coin dApp",
+        description: "Spend Coin dApp est une interface destinée à Spend Coin. Elle intéragie avec un smart contract qui permet de swap n'importe quel token ERC20 avec des SPC sur l'agrégateur Quickswap, et de brûler ces SPC.",
         img: "spc-screen.png",
         github: "https://github.com/ChristopheApp/dApp-SpendCoin",
         link: "https://spendcoindapp.netlify.app/"
     },
     {
         name: "Morning News",
-        description: "Morning News est une application web développée en React JS qui permet d’afficher les news actualisées et de les mettre dans une wishlist pour les sauvegarder en base de données et les lire plus tard.",
+        description: "Morning News est une application web développée en React JS qui permet d’afficher les news de plusieurs sites et de plusieurs domaines. On peut aussi mettre des articles en favori pour les sauvegarder en base de données et les lire plus tard.",
         img: "masques-screen.png",
         github: "https://github.com/ChristopheApp/MorningNews",
         link: ""
@@ -63,7 +63,7 @@ const projects: projet[] = [
     },
     {
         name: "Web3 Labo",
-        description: "",
+        description: "Web3 LAbo est une interface sommaire réaliser en React pour tester l'intégrations de smart-contract en Solidity.",
         img: "masques-screen.png",
         github: "https://github.com/ChristopheApp/web3-labo",
         link: ""

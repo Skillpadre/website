@@ -43,10 +43,10 @@ export default function BoxItemsProjects({ children, projet, onClick }: Props) {
         <>
         <Div>
 
-            <Box onClick={onClick} sx={{ flexGrow: 1 }} >
+            <Box sx={{ flexGrow: 1 }} >
                 <Grid container direction="row" justifyContent="space-around" alignItems="start">
                     <Grid item xs={10} sm={10} md={5}>
-                        <CardProject projet={projet} />
+                        <CardProject onClick={onClick} projet={projet} />
                     </Grid>
                     <Grid item xs={10} sm={10} md={5}>
                         <TypoDescriptionProjectStyled>
