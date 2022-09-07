@@ -1,19 +1,15 @@
-#root{
+/* #root{
   height: 100vh;
   width: 100vw;
-}
+} */
 
 body {
   overflow-x: hidden;
   max-width: 100vw;
 
+  color: #fbfbff;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -21,6 +17,69 @@ body {
   src: local('Aladin'), url(./fonts/Aladin/Aladin-Regular.ttf) format('truetype');
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Aladin';
+@font-face {
+  font-family: 'Fira_Sans_Condensed';
+  src: local('Fira Sans Condensed'), url(./fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Montaga';
+  src: local('Montaga'), url(./fonts/Montaga/Montaga-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Halant';
+  src: local('Halant'), url(./fonts/Halant/Halant-Regular.ttf) format('truetype');
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Fira_Sans_Condensed';
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 115.2px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Aladin';
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 78px;
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  font-family: 'Montaga';
+}
+
+@media screen and (max-width: 1200px) {
+  h2 {
+    font-size: 64px;
+    line-height: 96px;
+  }
+
+  h3 {
+    font-size: 48px;
+    line-height: 64px;
+    
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h2 {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 32px;
+    
+  }
+}
+

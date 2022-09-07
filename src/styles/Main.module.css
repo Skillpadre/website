@@ -1,0 +1,14 @@
+.mainContenair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../assets/fullBG/bgSeaFish.png');
+
+    /* overflow: hidden; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* min-height: 400vh; */
+    margin-bottom: -400px;
+}

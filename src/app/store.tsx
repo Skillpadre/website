@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import BackButtonReducer from './reducers/BackButtonReducer'
 import DarkModeReducer from './reducers/DarkModeReducer'
+import SecretSmokeReducer from './reducers/SecretSmokeReducer'
 
 export const store = configureStore({
   reducer: {
     backButton: BackButtonReducer,
     darkMode: DarkModeReducer,
+    secretSmoke: SecretSmokeReducer,
   },
 })
 

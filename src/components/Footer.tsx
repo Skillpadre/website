@@ -1,55 +1,72 @@
 import React from "react";
 import styled from '@emotion/styled';
-import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+
+import ImgSocialsMedia from '../styled/ImgSocialsMedia';
+import SocialsMedia from '../styled/SocialMedia';
+import SocialsMediaLinked from '../styled/SocialMediaLinked';
+import TypoNameFooter from '../styled/TypoNameFooter';
+import TypoCopyright from "../styled/TypoCopyright";
+
+import bgFooter from '../assets/footer/footer.svg'
 
 export default function Footer() {
 
     const Footer = styled.footer`
         display: flex;
-        justify-content: center;
-        align-items: center;
+        //justify-content: start;
+        align-items: end;
 
-        background-color: #1D1C1E;
-        color: "white";
+        background-image: url(${bgFooter});
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         width: 100%;
-        min-height: 100px;
+        min-height: 400px;
 
         z-index: 9;
-    `
 
-    
-const Item = styled(Paper)({
-    textAlign: 'center',
-  });
+        @media screen and (max-width: 600px) {
+            background-position: bottom;
+            `
+
+
+
 
     return (
         <>
             <Footer >
-                <Stack
-                    direction={{ xs: 'column', sm: 'row' }}
-                    spacing={{ xs: 1, sm: 2, md: 4, lg: 6, xl: 18 }}
-                >
-                    <Item>LinkedIn 1</Item>
-                    <Item>GitHub 2</Item>
-                    <Item>Email 3</Item>
-                </Stack>
-                {/* <div className={styles.footer}> */}
-            {/* <p>
-                <a href="https://www.linkedin.com/in/joseph-m-b-a-b8a8b917b/">  LinkedIn</a>
-            </p>
-            <p>
-                <a href="
-            
-            ">  GitHub</a>
-            </p>
-            <p>
-                <a href="
 
-">  Email</a>
-            </p> */}
-{/* </div> */}
+                <Box sx={{ flexGrow: 1, maxWidth: '100%' }}>
+                    <Grid container mb={{sm:2, md: 3, lg: 5, xl: 5}} spacing={{md: 0, lg: -15, xl: -20}} 
+                        direction={{ xs: 'column', sm: 'row' }}
+                        justifyContent="space-around" 
+                    >
+                        <Grid item >
+                                <TypoNameFooter>Christophe Applanat</TypoNameFooter>
+                                <TypoCopyright>Copyright ©	2022 Christophe Applanat. All Rights Reserved</TypoCopyright>
+                        </Grid>
+
+                        
+
+                        <Grid item >
+                            <Stack
+                                direction={{xs: 'row', sm: 'column'}}
+                                justifyContent={{xs: "center"}}
+                                spacing={1}
+                            >
+                                <SocialsMediaLinked name="linkedin" text="Linked In" link="https://www.linkedin.com/in/christophe-applanat/" />
+                                <SocialsMediaLinked name="github" text="GitHub" link="https://github.com/ChristopheApp" />
+                                <SocialsMedia name="mail" text="c.applanat@gmail.com" link="" />
+
+                            </Stack>
+                        </Grid>
+
+                    </Grid>
+                </Box>
             </Footer>
         </>
     );
