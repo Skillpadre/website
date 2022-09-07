@@ -4,7 +4,6 @@ import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
-import ImgSocialsMedia from '../styled/ImgSocialsMedia';
 import SocialsMedia from '../styled/SocialMedia';
 import SocialsMediaLinked from '../styled/SocialMediaLinked';
 import TypoNameFooter from '../styled/TypoNameFooter';

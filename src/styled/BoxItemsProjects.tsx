@@ -27,7 +27,6 @@ export default function BoxItemsProjects({ children, projets }: Props) {
 
 
     const Div = styled.div`
-    cursor: pointer;
     animation: fadein 5s;
 
     @keyframes fadein {

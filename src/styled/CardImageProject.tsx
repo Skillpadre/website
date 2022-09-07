@@ -29,8 +29,6 @@ export default function CardImageProject({ projet, onClick }: Props) {
         display: flex;
         flex-direction: row;
 
-        cursor: pointer;
-
         position: absolute;
         bottom: -28px;
         right: -35px;
@@ -39,7 +37,7 @@ export default function CardImageProject({ projet, onClick }: Props) {
 
     return (
         <Box sx={{ flexGrow: 1, maxWidth: '100%' }}>
-            <div style={{ position: 'relative' }}>
+            <div style={{ cursor: 'pointer', position: 'relative' }}>
 
                 <ImgsProjectsStyled onClick={onClick} src={require(`../assets/screens/${projet.img}`)} alt={projet.name} />
                 <Div>

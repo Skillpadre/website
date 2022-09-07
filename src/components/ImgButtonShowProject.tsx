@@ -1,9 +1,4 @@
-import React from 'react';
 import styled from '@emotion/styled';
-
-import hublot from '../assets/hublot.png';
-
-import screen from '../assets/screens/masques-screen.png';
 
 interface Props {
     src?: string;
@@ -18,13 +13,12 @@ export default function ImageButtonProject({src, alt, to}: Props) {
     height: 67.98px;
     cursor: pointer;
 
-
     z-index: 1;
     `
 
   return (
     <>
-        <A href={to} target="blank">
+        <A href={to} rel="noreferer" target="blank">
         <img src={src} alt={alt} />
         </A>
     </>
