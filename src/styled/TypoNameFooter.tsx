@@ -1,8 +1,10 @@
+import * as React from 'react'
 import styled from '@emotion/styled';
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { displaySecret } from '../app/reducers/SecretSmokeReducer'
 
-
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert, { AlertProps } from '@mui/material/Alert';
 
 const TypoStyled = styled.h3`
 font-family: 'Aladin';
@@ -44,15 +46,52 @@ animation: glow 2s infinite alternate linear;
 @media screen and (max-width: 900px) {
 }
 `
-
+const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
+  props,
+  ref,
+) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 
 export default function TypoNameFooter({ children, handleClickSecret }: any) {
-    const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
-    return (
-        <TypoStyled onClick={dispatch(displaySecret)}>
-            {children}
-        </TypoStyled>
-    )
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    openAlert();
+    displaySmokeSection();
+  }
+
+  const openAlert = () => {
+    setOpen(true)
+  }
+
+  const displaySmokeSection = () => {
+    setInterval(() => {
+      dispatch(displaySecret())
+    }, 2000);
+  }
+
+  const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  return (
+    <>
+      <TypoStyled onClick={handleClick}>
+        {children}
+      </TypoStyled>
+      <Snackbar open={open} autoHideDuration={5000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+          Secret déverouillé !
+        </Alert>
+      </Snackbar>
+    </>
+  )
 }

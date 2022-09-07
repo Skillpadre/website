@@ -29,6 +29,8 @@ export default function CardImageProject({ projet, onClick }: Props) {
         display: flex;
         flex-direction: row;
 
+        cursor: pointer;
+
         position: absolute;
         bottom: -28px;
         right: -35px;

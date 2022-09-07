@@ -118,10 +118,10 @@ export default function Projects() {
         console.log("scroll");
     }
 
-    const projectsList = projects.map((project, index) => {
+    // const projectsList = projects.map((project, index) => {
 
-        return (<BoxItemsProjects onClick={handleClick} projet={project} key={index} />)
-    })
+    //     return (<BoxItemsProjects onClick={handleClick} projet={project} key={index} />)
+    // })
 
     return (
         <BackgroundProjectsStyled>
@@ -139,8 +139,8 @@ export default function Projects() {
                             </Div2>
                         </Div1> */} 
                         <div>
-
-                        {projectsList[projectIndex]}
+                        <BoxItemsProjects  projets={projects}  />
+                        {/* {projectsList[projectIndex]} */}
                         </div>
 
                     {/* <BoxItemsProjects projet={projects[0]} /> */}

@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -17,45 +18,56 @@ type projet = {
 
 interface Props {
     children?: React.ReactNode;
-    projet: projet;
-    onClick: () => void;
+    projets: projet[];
 }
 
-export default function BoxItemsProjects({ children, projet, onClick }: Props) {
+export default function BoxItemsProjects({ children, projets }: Props) {
+
+    const [projectIndex, setProjectIndex] = useState(0);
+
 
     const Div = styled.div`
-    animation: fade-in 4s 1s 1 normal fadein;
+    cursor: pointer;
+    animation: fadein 5s;
 
-    
+    @keyframes fadein {
+    from {
+        opacity: 0;
+    }
 
-  @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
+    to {
+        opacity: 1;
+    }
+    }
     `
+
+    const handleClick = () => {
+        console.log("click");
+        if (projectIndex === projets.length - 1)
+            setProjectIndex(0);
+        else
+            setProjectIndex(projectIndex + 1);
+        console.log(projectIndex);
+    }
+
 
     return (
         <>
-        <Div>
+            <Div >
 
-            <Box sx={{ flexGrow: 1 }} >
-                <Grid container direction="row" justifyContent="space-around" alignItems="start">
-                    <Grid item xs={10} sm={10} md={5}>
-                        <CardProject onClick={onClick} projet={projet} />
+                <Box sx={{ flexGrow: 1 }} >
+                    <Grid container direction="row" justifyContent="space-around" alignItems="start">
+                        <Grid item xs={10} sm={10} md={5}>
+                            <CardProject onClick={handleClick} projet={projets[projectIndex]} />
+                        </Grid>
+                        <Grid item xs={10} sm={10} md={5}>
+                            <TypoDescriptionProjectStyled>
+                                {projets[projectIndex].description}
+                            </TypoDescriptionProjectStyled>
+                        </Grid>
                     </Grid>
-                    <Grid item xs={10} sm={10} md={5}>
-                        <TypoDescriptionProjectStyled>
-                            {projet.description}
-                        </TypoDescriptionProjectStyled>
-                    </Grid>
-                </Grid>
-            </Box>
-        </Div>
+                </Box>
+            </Div>
         </>
     );
 }

@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import BackgroundBoat from '../components/BackgroundBoat';
 import BackgroundSea from '../components/BackgroundSea';
 import Background from '../components/Background';
 
 import MainContenair from '../components/MainContenair';
+
+import type { RootState } from '../app/store'
+import { useSelector } from 'react-redux'
 
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
@@ -19,6 +22,8 @@ import SecretSection from '../components/sections/SecretSection';
 import styles from "../styles/Main.module.css";
 
 function Homepage() {
+  const secretSmoke = useState(useSelector((state: RootState) => state.secretSmoke.value))
+
   return (
     <>
 
@@ -40,6 +45,7 @@ function Homepage() {
           </div>
         </main>
         <Footer />
+        {/* {secretSmoke ? <SmokeSection /> : null} */}
       </div>
     </>
   );

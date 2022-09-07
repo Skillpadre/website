@@ -18,11 +18,11 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { displaySecret } from './app/reducers/SecretSmokeReducer';
 
 function App() {
   const nav = useNavigate();
-  const [secretSmoke, setSecretSmoke] = useState(useSelector((state: RootState) => state.secretSmoke.value))
-
+  const secretSmoke = useSelector((state: RootState) => state.secretSmoke.value)
 
   return (
     <>
