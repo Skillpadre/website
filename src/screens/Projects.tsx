@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import BoxItem from '../styled/BoxItemStackProjects'
+import BoxItem from '../styled/BoxItemsProjects'
 import ProjectsBgStyled from '../styled/BackgroundProjectsStyled';
 import ImgsProjectsStyled from '../styled/ImgsProjectsStyled';
 import TypoTitle from '../styled/TypoTitleStyled';
 
 import Stack from '@mui/material/Stack';
 
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { enableBackButton, disableBackButton } from '../app/reducers/BackButtonReducer'
 
 const bgScreen = require('../assets/screens/masques-screen.png');
@@ -110,20 +110,20 @@ function Projects() {
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container direction="column" alignItems="center">
 
-                    <TypoTitle>Mes projets</TypoTitle>
+                        <TypoTitle>Mes projets</TypoTitle>
 
-                    <Box sx={{ width: '90%', marginBottom: '50px' }}>
-                        <Stack direction="column"
-                            justifyContent="flex-start"
-                            alignItems="stretch"
-                            spacing={5}
-                        >
+                        <Box sx={{ width: '90%', marginBottom: '50px' }}>
+                            <Stack direction="column"
+                                justifyContent="flex-start"
+                                alignItems="stretch"
+                                spacing={5}
+                            >
 
-                            {projects.map((project, index) => (
-                                (<BoxItem projet={project} key={index} />)
-                            ))}
-                        </Stack>
-                    </Box>
+                                {/* {projects.map((project, index) => (
+                                    (<BoxItem projet={project} key={index} />)
+                                ))} */}
+                            </Stack>
+                        </Box>
                     </Grid>
                 </Box>
             </ProjectsBgStyled>
