@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from '@emotion/styled';
 import ImgSocialsMedia from './ImgSocialsMedia';
 
@@ -24,11 +23,11 @@ line-height: 15px;
     `
 
   return (
-    <> 
-        <Div>
-            <ImgSocialsMedia name={name} />
-            <Typo>{text}</Typo>
-        </Div>
+    <>
+      <Div>
+        <ImgSocialsMedia name={name} />
+        <Typo>{text}</Typo>
+      </Div>
     </>
   );
 }

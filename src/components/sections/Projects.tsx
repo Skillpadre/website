@@ -1,14 +1,7 @@
-import React, {useState, useEffect} from "react";
-import { Link } from "react-router-dom";
-import styled from "@emotion/styled";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import BackgroundProjectsStyled from "../../styled/BackgroundProjectsStyled";
-import TypoStyled from "../../styled/TypoAboutmeSection";
-import Bubble from "../../styled/Bubble";
-import bgScreen from "../../assets/screens/masques-screen.png";
 import BoxItemsProjects from "../../styled/BoxItemsProjects";
-import TitleAnimated from "../../styled/TitleProjectsAnimated";
 import TitleProjectsAnimated from "../../styled/TitleProjectsAnimated";
 
 export type projet = {
@@ -21,7 +14,7 @@ export type projet = {
 const projects: projet[] = [
     {
         name: "Masques.org",
-        description: "Masques.org est une Web App développée en React JS permettant de mettre en relation fabricants français et toute personne intéressée par des masques personnalisés, afin de favoriser les circuits courts et l'économie locale.",
+        description: "Masques.org est une Web App développée en React JS permettant de mettre en relation fabricants français et toutes personnes intéressées par des masques personnalisés, afin de favoriser les circuits courts et l'économie locale.",
         img: "masques-screen.png",
         github: "https://github.com/ChristopheApp/Masques.org",
         link: "https://masques-project.herokuapp.com/"
@@ -86,38 +79,6 @@ const projects: projet[] = [
 
 export default function Projects() {
 
-    const [projectIndex, setProjectIndex] = useState(0);
-
-
-    const Div1 = styled.div({
-        //flexDirection: 'row',
-        // justifyContent: 'space-around',
-        //overflowX: 'scroll',
-        // whiteSpace: 'nowrap',
-
-    })
-
-    const Div2 = styled.div({
-        display: 'inline-block',
-        //flexDirection: 'row',
-        // justifyContent: 'space-around',
-
-
-    })
-
-    const handleClick = () => {
-        console.log("click");
-        if(projectIndex === projects.length - 1)
-            setProjectIndex(0);
-        else
-            setProjectIndex(projectIndex + 1);
-        console.log(projectIndex);
-    }
-
-    const handleScroll = () => {
-        console.log("scroll");
-    }
-
     // const projectsList = projects.map((project, index) => {
 
     //     return (<BoxItemsProjects onClick={handleClick} projet={project} key={index} />)
@@ -128,22 +89,11 @@ export default function Projects() {
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container direction="column" justifyContent="center" alignItems="center" >
                     <TitleProjectsAnimated>Mes Projets</TitleProjectsAnimated>
-                        {/* <Div1>
-                            <Div2>
 
-                            {/* {projectsList} */}
-                            {/* <BoxItemsProjects onClick={handleClick} projet={projects[0]} key={1} />
-                            <BoxItemsProjects onClick={handleClick} projet={projects[1]} key={2} />
-                            <BoxItemsProjects onClick={handleClick} projet={projects[2]} key={3} />
-                            <BoxItemsProjects onClick={handleClick} projet={projects[3]} key={4} />
-                            </Div2>
-                        </Div1> */} 
                         <div>
                         <BoxItemsProjects  projets={projects}  />
                         {/* {projectsList[projectIndex]} */}
                         </div>
-
-                    {/* <BoxItemsProjects projet={projects[0]} /> */}
 
                 </Grid>
             </Box>

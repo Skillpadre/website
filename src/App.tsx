@@ -1,27 +1,22 @@
-import React, {useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Screen404 from './screens/Screen404';
 import Homepage from './screens/Home';
+// eslint-disable-next-line
 import Projects from './screens/Projects';
+// eslint-disable-next-line
 import AboutMe from './screens/AboutMe';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import IconButtonReturn from './styled/ButtonReturnStyled';
+
 import type { RootState } from './app/store'
 import { useSelector } from 'react-redux'
 
-import { useNavigate } from 'react-router-dom';
 import SmokeSection from './components/sections/SmokeSection';
 
 import {
   Routes,
   Route,
 } from "react-router-dom";
-import { displaySecret } from './app/reducers/SecretSmokeReducer';
 
 function App() {
-  const nav = useNavigate();
   const secretSmoke = useSelector((state: RootState) => state.secretSmoke.value)
 
   return (

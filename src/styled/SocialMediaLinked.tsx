@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from '@emotion/styled';
 import ImgSocialsMedia from './ImgSocialsMedia';
 
@@ -23,19 +22,19 @@ font-size: 12px;
 line-height: 15px;
     `
 
-    const A = styled.a`
+  const A = styled.a`
     cursor: pointer;
 
     `
 
   return (
-    <> 
-    <A href={link} target="_blank" rel="noreferrer">
+    <>
+      <A href={link} target="_blank" rel="noreferrer">
         <Div>
-            <ImgSocialsMedia name={name} />
-            <Typo>{text}</Typo>
+          <ImgSocialsMedia name={name} />
+          <Typo>{text}</Typo>
         </Div>
-    </A>
+      </A>
     </>
   );
 }

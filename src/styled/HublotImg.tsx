@@ -1,9 +1,7 @@
-import React from 'react';
 import styled from '@emotion/styled';
 
 import hublot from '../assets/hublot4.png';
 
-import screen from '../assets/screens/masques-screen.png';
 
 interface Props {
     bg?: string;

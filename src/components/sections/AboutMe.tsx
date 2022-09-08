@@ -1,17 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import LinkStyled from "../../styled/LinkStyled";
 import TypoStyled from "../../styled/TypoAboutmeSection";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import BackgroundAboutMeStyled from "../../styled/BackgroundAboutMeStyled";
-import Bubble from "../../styled/Bubble";
-import bgScreen from "../../assets/screens/eny-screen.png";
+
 import VectorSuite from "../VectorSuite";
 import GridItemAboutMe from "../GridItemAboutMe";
 
 export default function AboutMeSection() {
-
 
     return (
         <BackgroundAboutMeStyled>
@@ -42,7 +38,7 @@ export default function AboutMeSection() {
                         <h3>Maintenant</h3>
                         <TypoStyled>
                             Aujourd'hui, je ne cesse de faire évoluer mes compétences en me formant, en me documentant, et en réalisant des projets.
-                            Je vous laisse plonger au coeur de mon portfolio et découvrir les secret qui se cachent dans les profondeurs.
+                            Je vous laisse plonger au coeur de mon portfolio et découvrir les secrets qui se cachent dans les profondeurs.
                         </TypoStyled>
                     </GridItemAboutMe>
 
