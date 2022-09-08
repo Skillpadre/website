@@ -1,11 +1,9 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 import styled from '@emotion/styled';
-import styles from '../components/sections/styles/AboutMe.module.css'
 
 import type { RootState } from '../app/store'
 import { useSelector, useDispatch } from 'react-redux'
 import { enableBackButton, disableBackButton } from '../app/reducers/BackButtonReducer'
-
 
 function AboutMe() {
 

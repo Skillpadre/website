@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from "react";
 
 import styles from '../../styles/Sections.module.css'
-import Bubbles from "../Bubbles";
-import Bubbles2 from "../Bubbles2";
 
 import type { RootState } from '../../app/store'
 import { useSelector } from 'react-redux'

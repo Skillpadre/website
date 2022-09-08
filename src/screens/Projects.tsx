@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import BoxItem from '../styled/BoxItemsProjects'
 import ProjectsBgStyled from '../styled/BackgroundProjectsStyled';
-import ImgsProjectsStyled from '../styled/ImgsProjectsStyled';
 import TypoTitle from '../styled/TypoTitleStyled';
 
 import Stack from '@mui/material/Stack';

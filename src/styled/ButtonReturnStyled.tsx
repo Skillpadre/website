@@ -3,10 +3,6 @@ import IconButton from '@mui/material/IconButton';
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import { useNavigate } from 'react-router-dom';
 
-interface Props {
-    darkMode: boolean;
-}
-
 
 export default function IconButtonReturn(){
     const navigate = useNavigate();

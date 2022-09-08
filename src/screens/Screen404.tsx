@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 import { useNavigate } from "react-router-dom";
 import styled from '@emotion/styled';
 import bg from '../assets/backgrounds/SeaDay.png';
@@ -10,7 +10,7 @@ export default function Screen404() {
         setTimeout(() => {
             navigate('/');
         }, 5000);
-    }, []);
+    }, [navigate]);
 
     const Div = styled.div`
     width: 100%;

@@ -1,21 +1,14 @@
 import React, {useState, useEffect} from "react";
-import styled from "@emotion/styled";
 
 import script from "../../scripts/smoke.js";
 
 import styles from '../../styles/Sections.module.css'
-
-import type { RootState } from '../../app/store'
-import { useSelector } from 'react-redux'
-
 
 interface Props {
     children?: React.ReactNode;
 }
 
 export default function Section6({ children }: Props) {
-
-    const darkMode = useSelector((state: RootState) => state.darkMode.value)
 
     const [color, setColor] = useState("black");
     const [enter, setEnter] = useState(false);
@@ -25,21 +18,6 @@ export default function Section6({ children }: Props) {
             script();
     }, [enter]);
     
-
-    const Section = styled.section`
-    width: 100%;
-    min-height: 100vh;
-    
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    margin-bottom: -100px;
-    
-    background-color: #000000; 
-    `
 
     return(
         <section onMouseEnter={() => setEnter(true)} onMouseLeave={() => setColor("black")} className={styles.s6}>

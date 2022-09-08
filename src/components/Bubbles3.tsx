@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "../styles/Bubbles3.module.css";
 
 export default function Bubbles2() {
