@@ -1,9 +1,6 @@
 import React, {useState, useEffect, useRef} from "react";
 import styled from '@emotion/styled';
 
-
-import script from "../scripts/smoke2.js";
-
 interface Props {
     mouseEnter: () => void;
 

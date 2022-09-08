@@ -2,14 +2,11 @@ import React, {useState, useEffect} from "react";
 
 import script from "../../scripts/smoke.js";
 
-import SecretStyled from "../../styled/SecretStyled";
+import SecretStyled from "../../styled/SectionSecretStyled";
 
 //import styles from "../../styles/Sections.module.css";
 import CanvasStyled from "../../styled/CanvasStyled";
-import CanvasSmoke from "../CanvasSmoke";
 import TextScript from "../../styled//TextScript";
-import { WindowSharp } from "@mui/icons-material";
-
 
 interface Props {
     children?: React.ReactNode;

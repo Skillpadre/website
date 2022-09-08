@@ -1,10 +1,14 @@
 import './App.css';
 import Screen404 from './screens/Screen404';
 import Homepage from './screens/Home';
+// eslint-disable-next-line
+import Projects from './screens/Projects';
+// eslint-disable-next-line
+import AboutMe from './screens/AboutMe';
+
 import type { RootState } from './app/store'
 import { useSelector } from 'react-redux'
 
-import { useNavigate } from 'react-router-dom';
 import SmokeSection from './components/sections/SmokeSection';
 
 import {

@@ -3,8 +3,6 @@ import BackgroundStyled from "../styled/BackgroundStyled";
 import boatDay from "../assets/backgrounds/JapBoat_Day.png";
 import boatNight from "../assets/backgrounds/JapBoat_Night.png";
 import ChangeIconStyled from "../styled/ChangeIconStyled";
-import Img from "../styled/imgStyled";
-import { dark } from "@mui/material/styles/createPalette";
 
 interface Props {
     children?: React.ReactNode;
