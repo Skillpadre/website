@@ -9,7 +9,11 @@ export default function Home({ children }: Props) {
 
     const Section = styled.section`
     width: 100%;
-    min-height: 100vh;
+    min-height: 150vh;
+
+    @media screen and (max-width: 1400px) {
+        min-height: 100vh;
+
     `
 
     return(

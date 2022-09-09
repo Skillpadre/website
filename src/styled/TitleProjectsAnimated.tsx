@@ -3,8 +3,8 @@ import styled from '@emotion/styled';
 export default function TitleProjectsAnimated({ children }: any) {
 
     const H2 = styled.h2`
-    animation: 4s linear 1s 1 normal slidein;
-    // animation-duration: 5s;
+    animation: 2s linear 1s 1 normal slidein;
+    // animation-duration: 2s;
     // animation-name: zebi;
     
 

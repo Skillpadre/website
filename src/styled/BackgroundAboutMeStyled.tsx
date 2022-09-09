@@ -12,8 +12,12 @@ export default function AboutMeBgStyled({ children }: Props) {
     min-height: 100vh;
     z-index: 0;
 
+    @media screen and (max-width: 1400px) {
+    }
+    
     @media screen and (max-width: 900px) {
         padding-bottom: 100px;
+    }
 
     `
 

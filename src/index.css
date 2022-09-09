@@ -57,7 +57,7 @@ p {
   font-family: 'Montaga';
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   h2 {
     font-size: 64px;
     line-height: 96px;

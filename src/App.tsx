@@ -21,18 +21,12 @@ function App() {
 
   return (
     <>
-      {/* <NavBar>
-        <IconButtonReturn />
-      </NavBar> */}
+
       <Routes>
         <Route path="/" element={<Homepage />} />
-        {/* <Route path="/projects" element={<Projects />} />
-        <Route path="/aboutme" element={<AboutMe />} /> */}
-
-        <Route path="*" element={<Screen404 />} />
+        <Route path="/*" element={<Screen404 />} />
       </Routes>
 
-      {/* <Footer /> */}
       { secretSmoke ? <SmokeSection /> : null }
 
 
