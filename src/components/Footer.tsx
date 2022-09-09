@@ -58,7 +58,7 @@ export default function Footer() {
                             >
                                 <SocialsMediaLinked name="linkedin" text="Linked In" link="https://www.linkedin.com/in/christophe-applanat/" />
                                 <SocialsMediaLinked name="github" text="GitHub" link="https://github.com/ChristopheApp" />
-                                <SocialsMedia name="mail" text="c.applanat@gmail.com" link="" />
+                                <SocialsMedia name="mail" text="contact@christophe-applanat.fr" link="" />
 
                             </Stack>
                         </Grid>

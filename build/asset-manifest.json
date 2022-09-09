@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2712e66d.css",
+    "main.js": "/static/js/main.a657f32a.js",
+    "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
+    "static/media/bgSeaFish.png": "/static/media/bgSeaFish.1041786d496eea1c55b1.png",
+    "static/media/masques-screen.png": "/static/media/masques-screen.de30de97024adb3d9f80.png",
+    "static/media/spc-screen.png": "/static/media/spc-screen.f993498dec08151582de.png",
+    "static/media/SeaDay.png": "/static/media/SeaDay.1dae51563745e2634462.png",
+    "static/media/FiraSansCondensed-Regular.ttf": "/static/media/FiraSansCondensed-Regular.514b8df8cb3689410cef.ttf",
+    "static/media/Halant-Regular.ttf": "/static/media/Halant-Regular.f79a2bc24f0d52306af7.ttf",
+    "static/media/INF.png": "/static/media/INF.5935b90a9c1dfbd15126.png",
+    "static/media/lp-screen.png": "/static/media/lp-screen.c2f024554b2dee61ccca.png",
+    "static/media/eny-screen.png": "/static/media/eny-screen.accc1401141f1a8214da.png",
+    "static/media/Aladin-Regular.ttf": "/static/media/Aladin-Regular.63a995a1d79432bde3dc.ttf",
+    "static/media/Montaga-Regular.ttf": "/static/media/Montaga-Regular.ad986b8bdcdba608eb71.ttf",
+    "static/media/boat.svg": "/static/media/boat.dcf36208f12c08fdf95c.svg",
+    "static/media/footer.svg": "/static/media/footer.4119b7b3ad4c5a8732cca95168aa5a7c.svg",
+    "static/media/Vector.svg": "/static/media/Vector.af27d8c007822c3dfaf4551fba9c057f.svg",
+    "index.html": "/index.html",
+    "static/media/Third_Wave.svg": "/static/media/Third_Wave.ec2590d7ca24dfc7ec84.svg",
+    "static/media/Forth_Wave.svg": "/static/media/Forth_Wave.b4ea0258d12a0c8e4921.svg",
+    "static/media/Second_Wave.svg": "/static/media/Second_Wave.d881d128278ddd41077a.svg",
+    "static/media/First_Wave.svg": "/static/media/First_Wave.b9904951f18dc52afcdb.svg",
+    "static/media/Day.svg": "/static/media/Day.9c6dc122602095f43b20.svg",
+    "static/media/Sun.svg": "/static/media/Sun.3256dcb98e4f4a2e0417.svg",
+    "main.2712e66d.css.map": "/static/css/main.2712e66d.css.map",
+    "main.a657f32a.js.map": "/static/js/main.a657f32a.js.map",
+    "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2712e66d.css",
+    "static/js/main.a657f32a.js"
+  ]
+}

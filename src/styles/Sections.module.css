@@ -89,11 +89,11 @@
 }
 
 
-.s6 a {
+.link {
     /* color: blue; */
     cursor: pointer;
     text-decoration: underline;
-} a:hover {
+} .link:hover {
     color: lightblue;
 }
 
