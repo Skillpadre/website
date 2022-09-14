@@ -43,21 +43,21 @@ const projects: projet[] = [
     {
         name: "Morning News",
         description: "Morning News est une application web développée en React JS qui permet d’afficher les news de plusieurs sites et de plusieurs domaines. On peut aussi mettre des articles en favori pour les sauvegarder en base de données et les lire plus tard.",
-        img: "masques-screen.png",
+        img: "INF.png",
         github: "https://github.com/ChristopheApp/MorningNews",
         link: ""
     },
     {
         name: "My Moviz",
         description: "MyMoviz est une Web App développée en React JS connectée directement à une API permettant de récupérer les informations des films. Elle propose une liste de films, avec les dernières sorties cinéma à jour, et vous permet de créer votre propre wishlist.",
-        img: "masques-screen.png",
+        img: "INF.png",
         github: "https://github.com/ChristopheApp/MyMoviz",
         link: ""
     },
     {
         name: "Web3 Labo",
         description: "Web3 LAbo est une interface sommaire réaliser en React pour tester l'intégrations de smart-contract en Solidity.",
-        img: "masques-screen.png",
+        img: "INF.png",
         github: "https://github.com/ChristopheApp/web3-labo",
         link: ""
     },

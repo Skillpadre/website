@@ -2,7 +2,6 @@ import * as React from 'react'
 import styled from '@emotion/styled';
 import { useDispatch } from 'react-redux'
 import { displaySecret } from '../app/reducers/SecretSmokeReducer'
-import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
 
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert, { AlertProps } from '@mui/material/Alert';
@@ -48,25 +47,25 @@ animation: glow 2s infinite alternate linear;
 }
 `
 
-const Arrow = styled.div`
-  text-align: center;
-  margin: 8% 0;
+// const Bounced = styled.div`
+//   text-align: center;
+//   margin: 8% 0;
 
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+//   -moz-animation: bounce 2s infinite;
+//   -webkit-animation: bounce 2s infinite;
+//   animation: bounce 2s infinite;
 
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-30px);
-    }
-    60% {
-      transform: translateY(-15px);
-    }
-`
+//   @keyframes bounce {
+//     0%, 20%, 50%, 80%, 100% {
+//       transform: translateY(0);
+//     }
+//     40% {
+//       transform: translateY(-30px);
+//     }
+//     60% {
+//       transform: translateY(-15px);
+//     }
+// `
 
 const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
   props,
@@ -111,7 +110,7 @@ export default function TypoNameFooter({ children, handleClickSecret }: any) {
       </TypoStyled>
       <Snackbar open={open} autoHideDuration={4000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-          Secret déverouillé ! <Arrow><ExpandMoreRoundedIcon/></Arrow>
+          Secret déverouillé !
         </Alert>
       </Snackbar>
     </>
