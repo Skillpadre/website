@@ -16,6 +16,10 @@ import {
   Route,
 } from "react-router-dom";
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = "UA-241335592-1"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
 function App() {
   const secretSmoke = useSelector((state: RootState) => state.secretSmoke.value)
 

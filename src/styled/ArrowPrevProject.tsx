@@ -12,8 +12,8 @@ const ArrowPrevProject = ({onClick}: Props) => {
     color: #ffffff;
     `
     return (
-        <Button>
-            <ArrowBackIosNewRoundedIcon onClick={onClick} />
+        <Button onClick={onClick}>
+            <ArrowBackIosNewRoundedIcon />
         </Button>
     )
 }

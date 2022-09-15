@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b7badb4b.css",
-    "main.js": "/static/js/main.a1fb4ea8.js",
+    "main.js": "/static/js/main.848bccf1.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/bgSeaFish.png": "/static/media/bgSeaFish.1041786d496eea1c55b1.png",
     "static/media/masques-screen.png": "/static/media/masques-screen.de30de97024adb3d9f80.png",
@@ -25,11 +25,11 @@
     "static/media/Day.svg": "/static/media/Day.9c6dc122602095f43b20.svg",
     "static/media/Sun.svg": "/static/media/Sun.3256dcb98e4f4a2e0417.svg",
     "main.b7badb4b.css.map": "/static/css/main.b7badb4b.css.map",
-    "main.a1fb4ea8.js.map": "/static/js/main.a1fb4ea8.js.map",
+    "main.848bccf1.js.map": "/static/js/main.848bccf1.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b7badb4b.css",
-    "static/js/main.a1fb4ea8.js"
+    "static/js/main.848bccf1.js"
   ]
 }
